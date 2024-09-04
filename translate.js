@@ -274,7 +274,7 @@ const TRANSLATIONS = {
     "TETRA LEAGUE / RESULTS": "테트라 리그 / 결과",
     "DEFEAT": "패배",
     "VICTORY": "승리",
-    "Welcome to Quick Play chat! Please remember to be civil to your opponents - chat is actively monitored.": "빠른 플레이 채팅에 오신 것을 환영해요! 채팅은 적극적으로 모니터링되고 있으니 상대방에게 예의를 지켜야 한다는 점을 잊지 마세요.",
+    
     "PUBLIC ROOM": "공개 방",
     "create a public room anyone can join": "누구나 참여할 수 있는 공개 방 만들기",
     "PRIVATE ROOM": "비공개 방",
@@ -1321,7 +1321,7 @@ const SELECTOR_TRANSLATIONS = [
     ["#registeralt_form", "#registeralt_form", /are you&nbsp;(.*?)\?/, "혹시 $1 (이)세요?"],
     ["#registeralt_form > p", "#registeralt_form", /TETR.IO has a policy of&nbsp;<b>one account per person \(anonymous accounts excluded\)<\/b>. making multiple accounts may result in permanent restriction of all your accounts./, "TETR.IO에는 <b>1인당 하나의 계정(익명 계정 제외)</b> 정책이 있습니다. 여러 계정을 만들면 모든 계정이 영구적으로 제한될 수 있습니다."],
     ["#registeralt_form > .modal_also", "#registeralt_form", /read the&nbsp;<a href="\/about\/rules\/#ap" target="_blank">full policy<\/a>&nbsp;for more info. in doubt, or if you believe your usage of a second account is justified, please&nbsp;<a href="\/about\/support\/" target="_blank">contact support<\/a>./, '자세한 내용은&nbsp;<a href="/about/rules/#ap" target="_blank">전체 정책</a>&nbsp;을 읽어보세요. 의심스럽거나 두 번째 계정 사용이 정당하다고 생각하는 경우 <a href="/about/support/" target="_blank">지원팀에 문의</a>&nbsp;하세요.'],
-
+    [".ig_chat_message > p", "#ingame_chat_container", /Welcome to Quick Play chat! Please remember to be civil to your opponents - chat is actively monitored.\n\nThis chat is linked with (.*?)our Discord server<\/a>\./, "빠른 플레이 채팅에 오신 것을 환영해요! 채팅은 적극적으로 모니터링되고 있으니 상대방에게 예의를 지켜야 한다는 점을 잊지 마세요.\n\n이 채팅은 $1우리의 디스코드 서버</a>와 연결되어 있어요."],
 ]
 var compiledSelectors = {}
 
