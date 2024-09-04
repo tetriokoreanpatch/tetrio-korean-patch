@@ -75,7 +75,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             '"%%PIECE%%-spin"': '"%%PIECE%%-스핀"',
             '"back-to-back"': '"백-투-백"',
             '"BACK-TO-BACK"': '"백-투-백"',
-            '"ALL\\nCLEAR"': '"\\fc5올 클리어"',
+            '"ALL\\nCLEAR"': '"\\f5올 클리어"',
             //'this.effects.set("allclear",new lc.generic.ns.shout(this,{size:60': 'this.effects.set("allclear",new lc.generic.ns.shout(this,{size:55',
             '"COLOR\\nCLEAR"': '"컬러\\n클리어"',
             '"LEVEL\\nCOMPLETE"': '"레벨 완료"',
@@ -93,7 +93,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
 
             '"HYPERSPEED!!!"': '"초고속 모드!!!"',
             "`floor ${t+1}`": "`${t+1}층`",
-            "create(`\\fc3FLOOR \\fc9${l}\\f3\\n\\n${e[l]}`)": "create(`\\fc9${l}\\fc3층\\f3\\n\\n${e[l]}`)",
+            "create(`\\fc3FLOOR \\fc9${l}\\f3\\n\\n${e[l]}`)": "create(`\\fc9${l}\\fc4층\\f3\\n\\n${e[l]}`)",
             '"B2B \\fc3X":`B2B \\fc3X\\f5': '"백투백 \\fc3X":`백투백 \\fc3X\\f5'
         }
         const SOURCE_TRANSLATIONS_REGEX = [
