@@ -242,6 +242,7 @@ const TRANSLATIONS = {
     "FT7": "7선승",
     ", round ": ", 라운드 ",
     "FINISH!": "종료!",
+    "FINISH": "종료",
     "ABORTED!": "중단됨!",
     "MATCH POINT": "매치 포인트",
     "TIEBREAKER": "타이브레이커",
