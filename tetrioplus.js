@@ -75,7 +75,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             '"%%PIECE%%-spin"': '"%%PIECE%%-스핀"',
             '"back-to-back"': '"백-투-백"',
             '"BACK-TO-BACK"': '"백-투-백"',
-            '"ALL\\nCLEAR"': '"\\f5올 클리어"',
+            '"ALL\\nCLEAR"': '"\\f4올 클리어"',
             //'this.effects.set("allclear",new lc.generic.ns.shout(this,{size:60': 'this.effects.set("allclear",new lc.generic.ns.shout(this,{size:55',
             '"COLOR\\nCLEAR"': '"컬러\\n클리어"',
             '"LEVEL\\nCOMPLETE"': '"레벨 완료"',
