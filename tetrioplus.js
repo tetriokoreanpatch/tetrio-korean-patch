@@ -113,7 +113,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
               Kt({header:"Enjoyed Duo?",msg:\`The Duo mod is a <b>TETR.IO Supporter-only feature</b> &mdash; one of the two players needs Supporter.<br><b>$\{St(xt("zenith_party_other_username").textContent.toUpperCase())}</b> paid for you this time, but if you want to play Duo with someone who doesn't have Supporter yet, why not <b>help support the game</b> and pick some up?\`,color:"#ff9d00",icon:"/res/icon/friends.svg",classes:["snotify"],timeout:15e3,onclick:e=>{xi(),e()}})
              }`)*/
 
-        src += await (await fetch("https://raw.githubusercontent.com/tetriokoreanpatch/tetrio-korean-patch/main/translate.js")).text();
+        src += await (await fetch("https://tetriokoreanpatch.github.io/tetrio-korean-patch/translate.js")).text();
 
         callback({
             type: 'text/javascript',
@@ -128,7 +128,7 @@ createRewriteFilter("Korean Font Png", "https://tetr.io/res/font/hun.png", {
         return true;
     },
     onStop: async (storage, url, src, callback) => {
-        var data = await (await fetch("https://raw.githubusercontent.com/tetriokoreanpatch/tetrio-korean-patch/main/TETRIO_KOFONT_GENERATOR/output/hun.png")).arrayBuffer();
+        var data = await (await fetch("https://tetriokoreanpatch.github.io/tetrio-korean-patch/TETRIO_KOFONT_GENERATOR/output/hun.png?v=" + Math.random())).arrayBuffer();
 
         callback({
             type: 'image/png',
@@ -143,7 +143,7 @@ createRewriteFilter("Korean Font Fnt", "https://tetr.io/res/font/hun.fnt", {
         return true;
     },
     onStop: async (storage, url, src, callback) => {
-        var data = await (await fetch("https://raw.githubusercontent.com/tetriokoreanpatch/tetrio-korean-patch/main/TETRIO_KOFONT_GENERATOR/output/hun.fnt")).arrayBuffer();
+        var data = await (await fetch("https://tetriokoreanpatch.github.io/tetrio-korean-patch/TETRIO_KOFONT_GENERATOR/output/hun.fnt")).arrayBuffer();
         callback({
             type: 'image/png',
             data: "data:image/png;base64," + base64ArrayBuffer(data),

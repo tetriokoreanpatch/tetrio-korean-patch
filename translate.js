@@ -1317,7 +1317,7 @@ const SELECTOR_TRANSLATIONS = [
     ["#footer_text", "#footer_text", /change settings in your (.*?) account/, "$1 계정 속 설정을 변경하세요"],
     ["#about_supporter > h1", "#about_supporter", /^support&nbsp;(.*?)$/gi, "$1 지원"],
     [".notification > p", "#notifications", /The Duo mod is a <b>TETR.IO Supporter-only feature<\/b> — one of the two players needs Supporter.<br><b>(.*?)<\/b> paid for you this time, but if you want to play Duo with someone who doesn't have Supporter yet, why not <b>help support the game<\/b> and pick some up\?/, "듀오 모드는 <b>TETR.IO 서포터 전용 기능 입니다.<\/b><br> — 두 플레이어 중 한 명은 서포터가 필요합니다.<br><b>$1</b>(이)가 이번에는 비용을 지불했지만 아직 서포터가 없는 사람과 듀오를 플레이하고 싶다면 <b>게임 지원을 도와서<\/b> 서포터를 구입해 보는 것은 어떨까요?"],
-    ["#registeralt_form", "#registeralt_form", /are you&nbsp;(.*?)\?/, "혹시 $1 이세요?"],
+    ["#registeralt_form", "#registeralt_form", /are you&nbsp;(.*?)\?/, "혹시 $1 (이)세요?"],
     ["#registeralt_form > p", "#registeralt_form", /TETR.IO has a policy of&nbsp;<b>one account per person \(anonymous accounts excluded\)<\/b>. making multiple accounts may result in permanent restriction of all your accounts./, "TETR.IO에는 <b>1인당 하나의 계정(익명 계정 제외)</b> 정책이 있습니다. 여러 계정을 만들면 모든 계정이 영구적으로 제한될 수 있습니다."],
     ["#registeralt_form > .modal_also", "#registeralt_form", /read the&nbsp;<a href="\/about\/rules\/#ap" target="_blank">full policy<\/a>&nbsp;for more info. in doubt, or if you believe your usage of a second account is justified, please&nbsp;<a href="\/about\/support\/" target="_blank">contact support<\/a>./, '자세한 내용은&nbsp;<a href="/about/rules/#ap" target="_blank">전체 정책</a>&nbsp;을 읽어보세요. 의심스럽거나 두 번째 계정 사용이 정당하다고 생각하는 경우 <a href="/about/support/" target="_blank">지원팀에 문의</a>&nbsp;하세요.'],
 
