@@ -1459,7 +1459,7 @@ function parser(querys) {
             code += `
         nresult = [];
         for (var res of result) {
-          var elem = res.getElementById("$\{query.replace("#","")}");
+          var elem = res.getElementById("${query.replace("#","")}");
           if (elem != null) {
             nresult.push(elem);
           }
@@ -1472,7 +1472,7 @@ function parser(querys) {
         nresult = [];
         for (var res of result) {
           if (res == null) continue;
-          for (var el of res.getElementsByClassName("$\{query.replace(".","")}")) {
+          for (var el of res.getElementsByClassName("${query.replace(".","")}")) {
             nresult.push(el);
           }
         }
@@ -1484,7 +1484,7 @@ function parser(querys) {
         nresult = [];
         for (var res of result) {
           if (res == null) continue;
-          for (var el of res.getElementsByTagName("$\{query}")) {
+          for (var el of res.getElementsByTagName("${query}")) {
             nresult.push(el);
           }
         }
