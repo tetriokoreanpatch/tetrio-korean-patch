@@ -1421,7 +1421,7 @@ function isBlacklisted(node) {
         return true;
     }
     // 아 이젠 쓰기도 귀찮네 대충 방
-    if (node.matches(".scroller_player h1")) {
+    if (node.matches(".scroller_player>h1")) {
         return true;
     }
 
