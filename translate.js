@@ -124,7 +124,7 @@ const TRANSLATIONS = {
     "HOME": "홈",
     "challenge yourself and top the leaderboards": "자신에게 도전하고 리더보드 정상을 차지하세요",
     "leaderboards, replays and more": "리더보드, 리플레이, 그리고 더",
-    " leaderboards, achievements, replays and more": " 리더보드, 업적, 리플레이, 그리고 더",
+    "leaderboards, achievements, replays and more": " 리더보드, 업적, 리플레이, 그리고 더",
     "CONFIG": "설정",
     "connected to server": "서버에 연결됐어요",
     "enter room id or url and hit enter...": "방 ID 또는 링크를 입력하고 enter를 누르세요...",
