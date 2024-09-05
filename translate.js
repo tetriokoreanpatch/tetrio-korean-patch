@@ -1286,6 +1286,11 @@ const TRANSLATIONS = {
     "GLOBAL RANK": "글로벌 순위",
 
     "Enjoyed Duo?": "듀오를 즐기셨나요?",
+
+    "THIS TETR.IO CLIENT HAS BEEN MODIFIED": "이 TETR.IO 클라이언트는 수정되었습니다",
+    "Third-party modifications to TETR.IO are not supported by the TETR.IO team and may have compatibility, performance and safety issues.": "TETR.IO에 대한 타사 수정은 TETR.IO 팀에서 지원하지 않으며 호환성, 성능 및 안전 문제가 있을 수 있습니다.",
+    "Do not report any issues while using third-party modifications. Modifications that alter gameplay are strictly forbidden.": "타사 수정 사항을 사용하는 동안에는 어떤 문제도 보고하지 마세요. 게임 플레이를 변경하는 수정은 엄격히 금지됩니다.",
+    "This message will disappear after 10 seconds": "이 메시지는 10초 후에 사라집니다.",
 };
 
 /**
