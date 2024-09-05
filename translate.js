@@ -1359,7 +1359,7 @@ document.head.appendChild(style);
 function replaceFontFamily(element) {
     if (element.nodeType === Node.ELEMENT_NODE) {
         const computedStyle = window.getComputedStyle(element);
-        console.log(computedStyle);
+        console.log(computedStyle.fontFamily);
         if (computedStyle.fontFamily.trim() === 'HUN' && !element.matches('#now_playing_jp')) {
             element.style.fontFamily = `'HUN', 'BMHANNAAir'`;
         }
