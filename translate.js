@@ -1327,8 +1327,6 @@ var compiledSelectors = {}
 
 // CSS 폰트 적용
 const fontFace = `
-    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css");
-  
     @font-face {
       font-family: 'BMHANNAAir';
       src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
@@ -1343,7 +1341,12 @@ const fontFace = `
       font-style: normal;
     }
   
-   
+    @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
   
     .replayid::before {
       font-family: 'HUN', 'BMHANNAAir' !important;
@@ -1369,7 +1372,7 @@ function replaceFontFamily(element) {
             element.style.fontFamily = `'PFW', 'Orbit-Regular'`;
         }
         if (computedStyle.fontFamily.trim() === 'C') {
-            element.style.fontFamily = `'C', 'Pretendard JP'`;
+            element.style.fontFamily = `'C', 'Pretendard-Regular'`;
         }
     }
 }
