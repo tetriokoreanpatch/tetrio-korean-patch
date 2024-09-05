@@ -1359,17 +1359,17 @@ document.head.appendChild(style);
 function replaceFontFamily(element) {
     if (element.nodeType === Node.ELEMENT_NODE) {
         const computedStyle = window.getComputedStyle(element);
-        console.log(computedStyle.fontFamily.trim());
-        if (computedStyle.fontFamily.trim() === 'HUN' && !element.matches('#now_playing_jp')) {
+        const fnt = computedStyle.fontFamily.trim();
+        if (fnt === 'HUN' && !element.matches('#now_playing_jp')) {
             element.style.fontFamily = `'HUN', 'BMHANNAAir'`;
         }
-        if (computedStyle.fontFamily.trim() === 'PFW') {
+        if (fnt === 'PFW') {
             element.style.fontFamily = `'PFW', 'Orbit-Regular'`;
         }
-        if (computedStyle.fontFamily.trim() === 'PFW, sans-serif') {
+        if (fnt === 'PFW, sans-serif') {
             element.style.fontFamily = `'PFW', 'Orbit-Regular'`;
         }
-        if (computedStyle.fontFamily.trim() === 'C') {
+        if (fnt === 'C' || fnt == '"C"') {
             element.style.fontFamily = `'C', 'Pretendard JP'`;
         }
     }
