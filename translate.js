@@ -1602,7 +1602,6 @@ for (const [selector, detectSelector, regex, replace] of SELECTOR_TRANSLATIONS) 
             for (var targetElement of targetElements) {
                 if (targetElement == null) continue;
                 const html = targetElement.innerHTML;
-                console.log(html);
                 if (html in TRANSLATIONS) continue;
                 if (regex.test(html)) {
                     targetElement.innerHTML = html.replace(regex, replace);
@@ -1611,7 +1610,7 @@ for (const [selector, detectSelector, regex, replace] of SELECTOR_TRANSLATIONS) 
         })();
     });
     var sel = compiledSelectors[detectSelector]();
-    console.log(sel);
+    console.log("translate target: " + sel);
     for (var s of sel) {
         obs.observe(s, { childList: true, subtree: true });
     }
