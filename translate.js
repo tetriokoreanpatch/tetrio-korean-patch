@@ -1348,7 +1348,7 @@ let SELECTOR_TRANSLATIONS = [
     [".notification > p", "#notifications", /changing (.*?) requires a restart to go in effect. hit F5 on your keyboard to restart\./, "$1(을)를 변경하면 다시 시작해야 적용돼요. 다시 시작하려면 키보드에서 F5를 누르세요."],
     ["#roommodeblurb", "#roommodeblurb", /VERSUS ((.*?)*)/, "대결 $1"],
     ["#roommodeblurb", "#roommodeblurb", /TETRA LEAGUE ((.*?)*)/, "테트라 리그 $1"],
-    ["#roommodeblurb", "#roommodeblurb", /(.*?) FT(.*?)/, "$1 $2선승제"],
+    ["#roommodeblurb", "#roommodeblurb", /(.*?) FT((.*?)*)/, "$1 $2선승제"],
 ]
 var compiledSelectors = {}
 
