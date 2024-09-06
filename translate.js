@@ -1317,7 +1317,7 @@ const TRANSLATIONS = {
 /**
  * @type {[string, RegExp, string][]}
  */
-let SELECTOR_TRANSLATIONS = [
+const SELECTOR_TRANSLATIONS = [
     ["#footer_text", "#footer_text", /welcome to (.*?)!/, "$1에 오신 걸 환영해요!"],
     ["#sig_config > p", "#sig_config", /tweak your&nbsp;(.*?)&nbsp;experience/, "$1 경험을 조정하세요"],
     ["#sig_about > p", "#sig_about", /all about&nbsp;<span class="cheeky">(.*?)<\/span>(.*)/, "<span class=\"cheeky\">$1</span>$2에 관한 모든 것"],
@@ -1355,20 +1355,15 @@ let SELECTOR_TRANSLATIONS = [
 
     ["#roommodeblurb", "#roommodeblurb", /VERSUS ((.*?)*)/, "대결 $1"],
     ["#roommodeblurb", "#roommodeblurb", /(.*?) FT((.*?)*)/, "$1 $2선승제"],
+
+    ["#config_electron > h1", ".right_scroller", /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
+    ["#config_electron > p", ".right_scroller", /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
+    ["#header_text", "#header_text", /CONFIG \/ (.*?) DESKTOP/, "설정 / $1 데스크톱"],
+    [".ns", ".right_scroller", /• hit F5 to reload&nbsp;((.*?)*)/, "• F5를 눌러 $1를 리로드"],
+    [".ns", ".right_scroller", /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
+    ["#footer_text", "#footer_text", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
 ]
 var compiledSelectors = {}
-
-if (window.IS_ELECTRON) {
-    SELECTOR_TRANSLATIONS = SELECTOR_TRANSLATIONS.concat([
-        ["#config_electron > h1", ".right_scroller", /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
-        ["#config_electron > p", ".right_scroller", /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
-        ["#header_text", "#header_text", /CONFIG \/ (.*?) DESKTOP/, "설정 / $1 데스크톱"],
-        [".ns", ".right_scroller", /• hit F5 to reload&nbsp;((.*?)*)/, "• F5를 눌러 $1를 리로드"],
-        [".ns", ".right_scroller", /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
-        ["#footer_text", "#footer_text", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
-    ]);
-
-}
 
 // CSS 폰트 적용
 const fontFace = `
@@ -1602,6 +1597,7 @@ observer.observe(document.body, { childList: true, subtree: true });
 
 for (const [selector, detectSelector, regex, replace] of SELECTOR_TRANSLATIONS) {
     var sel = compiledSelectors[detectSelector]();
+    if (sel == null) continue;
     var obs = new MutationObserver(mutations => {
         (async () => {
             //console.log(sel);
