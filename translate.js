@@ -1299,7 +1299,7 @@ const TRANSLATIONS = {
 /**
  * @type {[string, RegExp, string][]}
  */
-const SELECTOR_TRANSLATIONS = [
+let SELECTOR_TRANSLATIONS = [
     ["#footer_text", "#footer", /welcome to (.*?)!/, "$1에 오신 걸 환영해요!"],
     ["#sig_config > p", "#sig_config", /tweak your&nbsp;(.*?)&nbsp;experience/, "$1 경험을 조정하세요"],
     ["#sig_about > p", "#sig_about", /all about&nbsp;<span class="cheeky">(.*?)<\/span>(.*)/, "<span class=\"cheeky\">$1</span>$2에 관한 모든 것"],
