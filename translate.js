@@ -1357,7 +1357,7 @@ if (window.IS_ELECTRON) {
         ["#config_electron > h1", ".right_scroller", /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
         ["#config_electron > p", ".right_scroller", /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
         ["#header_text", "#header_text", /CONFIG \/ (.*?) DESKTOP/, "설정 / $1 데스크톱"],
-        [".ns", ".right_scroller", /• hit F5 to reload&nbsp;(.*?)/, "F5를 눌러 $1를 리로드"],
+        [".ns", ".right_scroller", /• hit F5 to reload&nbsp;((.*?)*)/, "F5를 눌러 $1를 리로드"],
         [".ns", ".right_scroller", /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
         ["#footer_text", "#footer", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
     ]);
