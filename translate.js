@@ -1315,7 +1315,7 @@ const TRANSLATIONS = {
  * @type {[string, RegExp, string][]}
  */
 let SELECTOR_TRANSLATIONS = [
-    ["#footer_text", "#footer", /welcome to (.*?)!/, "$1에 오신 걸 환영해요!"],
+    ["#footer_text", "#footer_text", /welcome to (.*?)!/, "$1에 오신 걸 환영해요!"],
     ["#sig_config > p", "#sig_config", /tweak your&nbsp;(.*?)&nbsp;experience/, "$1 경험을 조정하세요"],
     ["#sig_about > p", "#sig_about", /all about&nbsp;<span class="cheeky">(.*?)<\/span>(.*)/, "<span class=\"cheeky\">$1</span>$2에 관한 모든 것"],
     ["#footer_text", "#footer", /tweak your settings for a better (.*?) experience/, "더 나은 $1 경험을 위해 설정을 조정하세요"],
@@ -1359,7 +1359,7 @@ if (window.IS_ELECTRON) {
         ["#header_text", "#header_text", /CONFIG \/ (.*?) DESKTOP/, "설정 / $1 데스크톱"],
         [".ns", ".right_scroller", /• hit F5 to reload&nbsp;((.*?)*)/, "• F5를 눌러 $1를 리로드"],
         [".ns", ".right_scroller", /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
-        ["#footer_text", "#footer", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
+        ["#footer_text", "#footer_text", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
     ]);
 
 }
