@@ -1171,7 +1171,7 @@ const TRANSLATIONS = {
     "— interested in playtesting something new for TETR.IO?": " - TETR.IO의 새로운 플레이 테스트에 관심이 있으신가요?",
     "Apply now": "바로 지원하기",
     "You are currently not a supporter.": "현재 서포터가 아니예요.",
-    "Become a supporter or gift supporter status today and directly support TETR.IO development!": "서포터가 되거나 서포터 상태를 선물해 TETR.IO 개발을 직접 지원하세요!",
+    "Become a supporter or gift supporter status today and directly support TETR.IO development!": "서포터가 되거나 서포터를 선물해 TETR.IO 개발을 직접 지원하세요!",
     "LOG OUT ALL": "모두 로그아웃하기",
     "REMOVE": "제거",
     "CHANGE": "변경",
