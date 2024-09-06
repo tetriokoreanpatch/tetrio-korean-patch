@@ -1356,14 +1356,13 @@ const SELECTOR_TRANSLATIONS = [
     ["#roommodeblurb", "#roommodeblurb", /VERSUS ((.*?)*)/, "대결 $1"],
     ["#roommodeblurb", "#roommodeblurb", /(.*?) FT((.*?)*)/, "$1 $2선승제"],
 
-    ["#config_electron > h1", "#menus > .right_scroller > .right_scroller", /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
-    ["#config_electron > p", "#menus > .right_scroller > .right_scroller", /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
+    ["#config_electron > h1", 'div[data-menuview="config_account_orders"]', /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
+    ["#config_electron > p", 'div[data-menuview="config_account_orders"]', /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
     ["#header_text", "#header_text", /CONFIG \/ (.*?) DESKTOP/, "설정 / $1 데스크톱"],
-    [".ns", "#menus > .right_scroller > .right_scroller", /• hit F5 to reload&nbsp;((.*?)*)/, "• F5를 눌러 $1를 리로드"],
-    [".ns", "#menus > .right_scroller > .right_scroller", /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
+    [".ns", 'div[data-menuview="config_account_orders"]', /• hit F5 to reload&nbsp;((.*?)*)/, "• F5를 눌러 $1를 리로드"],
+    [".ns", 'div[data-menuview="config_account_orders"]', /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
     ["#footer_text", "#footer_text", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
 ]
-var compiledSelectors = {}
 
 // CSS 폰트 적용
 const fontFace = `
@@ -1502,65 +1501,13 @@ function translateNode(node) {
     }
 }
 
-function parser(querys) {
-    code = "result = [document];\n";
-    for (var query of querys.split(">")) {
-        query = query.trim();
-        if (query.startsWith("#")) {
-            code += `
-        nresult = [];
-        for (var res of result) {
-          var elem = res.getElementById("${query.replace("#","")}");
-          if (elem != null) {
-            nresult.push(elem);
-          }
-        }
-        result = nresult;
-        `
-        }
-        else if (query.startsWith(".")) {
-            code += `
-        nresult = [];
-        for (var res of result) {
-          if (res == null) continue;
-          for (var el of res.getElementsByClassName("${query.replace(".","")}")) {
-            nresult.push(el);
-          }
-        }
-        result = nresult;
-        `
-        }
-        else {
-            code += `
-        nresult = [];
-        for (var res of result) {
-          if (res == null) continue;
-          for (var el of res.getElementsByTagName("${query}")) {
-            nresult.push(el);
-          }
-        }
-        result = nresult;
-        `
-        }
-    }
-    code += "return result;";
-    console.log(code);
-    return new Function(code);
-}
-
-for (const [selector, detectSelector, regex, replace] of SELECTOR_TRANSLATIONS) {
-    console.log("compiling selectors");
-    compiledSelectors[selector] = parser(selector);
-    if (!(detectSelector in compiledSelectors))
-        compiledSelectors[detectSelector] = parser(detectSelector);
-}
 
 async function translatePage() {
     document.querySelectorAll('body *').forEach(node => {
         translateNode(node);
     });
     for (const [selector, detectSelector, regex, replace] of SELECTOR_TRANSLATIONS) {
-        const targetElements = compiledSelectors[selector]();
+        const targetElements = document.querySelectorAll(selector);
 
         for (var targetElement of targetElements) {
             if (targetElement == null) continue;
@@ -1596,12 +1543,12 @@ const observer = new MutationObserver(mutations => {
 observer.observe(document.body, { childList: true, subtree: true });
 
 for (const [selector, detectSelector, regex, replace] of SELECTOR_TRANSLATIONS) {
-    var sel = compiledSelectors[detectSelector]();
+    var sel = document.querySelectorAll(detectSelector);
     if (sel == null) continue;
     var obs = new MutationObserver(mutations => {
         (async () => {
             //console.log(sel);
-            const targetElements = compiledSelectors[selector]();
+            const targetElements = document.querySelectorAll(selector);
 
             for (var targetElement of targetElements) {
                 if (targetElement == null) continue;
