@@ -1351,11 +1351,8 @@ const SELECTOR_TRANSLATIONS = [
     [".ig_chat_message > p", "#ingame_chat_container", /Welcome to Quick Play chat! Please remember to be civil to your opponents - chat is actively monitored.\n\nThis chat is linked with (.*?)our Discord server<\/a>\./, "빠른 플레이 채팅에 오신 것을 환영해요! 채팅은 적극적으로 모니터링되고 있으니 상대방에게 예의를 지켜야 한다는 점을 잊지 마세요.\n\n이 채팅은 $1저희 Discord 서버</a>와 연결되어 있어요."],
     [".notification > p", "#notifications", /changing (.*?) requires a restart to go in effect. hit F5 on your keyboard to restart\./, "$1을(를) 변경하면 다시 시작해야 적용돼요. 다시 시작하려면 키보드에서 F5를 누르세요."],
     [".notification > p", "#notifications", /changing (.*?) requires a restart to fully go in effect. hit F5 on your keyboard to restart\./ , "$1을(를) 변경하면 다시 시작해야 완전히 적용돼요. 다시 시작하려면 키보드에서 F5를 누르세요."],
-    ["#referee_top", "#referee_top", /VERSUS ((.*?)*)/, "대결 $1"],
-    ["#referee_top", "#referee_top", /(.*?) FT((.*?)*)/, "$1 $2선승제"],
-
-    ["#roommodeblurb", "#roommodeblurb", /VERSUS ((.*?)*)/, "대결 $1"],
-    ["#roommodeblurb", "#roommodeblurb", /(.*?) FT((.*?)*)/, "$1 $2선승제"],
+    ["#referee_top, #roommodeblurb", "#referee_top, #roommodeblurb", /VERSUS ((.*?)*)/, "대결 $1"],
+    ["#referee_top, #roommodeblurb", "#referee_top, #roommodeblurb", /(.*?) FT((.*?)*)/, "$1 $2선승제"],
 
     ["#config_electron > h1", 'div[data-menuview="config_account_orders"]', /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
     ["#config_electron > p", 'div[data-menuview="config_account_orders"]', /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
