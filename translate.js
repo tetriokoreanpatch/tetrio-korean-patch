@@ -1602,6 +1602,7 @@ for (const [selector, detectSelector, regex, replace] of SELECTOR_TRANSLATIONS) 
             for (var targetElement of targetElements) {
                 if (targetElement == null) continue;
                 const html = targetElement.innerHTML;
+                console.log(html);
                 if (html in TRANSLATIONS) continue;
                 if (regex.test(html)) {
                     targetElement.innerHTML = html.replace(regex, replace);
