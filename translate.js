@@ -1318,7 +1318,7 @@ const TRANSLATIONS = {
  * @type {[string, RegExp, string][]}
  */
 let SELECTOR_TRANSLATIONS = [
-    ["#footer_text", "#footer_text", /welcome to (.*?)!/, "$1에 오신 걸 환영해요!"],
+    ["#footer_text", "#footer", /welcome to (.*?)!/, "$1에 오신 걸 환영해요!"],
     ["#sig_config > p", "#sig_config", /tweak your&nbsp;(.*?)&nbsp;experience/, "$1 경험을 조정하세요"],
     ["#sig_about > p", "#sig_about", /all about&nbsp;<span class="cheeky">(.*?)<\/span>(.*)/, "<span class=\"cheeky\">$1</span>$2에 관한 모든 것"],
     ["#footer_text", "#footer", /tweak your settings for a better (.*?) experience/, "더 나은 $1 경험을 위해 설정을 조정하세요"],
@@ -1328,7 +1328,7 @@ let SELECTOR_TRANSLATIONS = [
     [".scroller_block > h2", ".scroller_block", /welcome to&nbsp;(.*?)!/, "$1에 오신 걸 환영해요!"],
     ["#sys_guide > p", "#sys_guide", /(.*?)&nbsp;is a free familiar yet fast-paced online stacker in the same genre as tetris, and played by millions across the globe./, "$1는 테트리스와 같은 장르의 친숙하면서도 빠르게 진행되는 무료 온라인 스태커 게임으로, 전 세계 수백만 명이 즐기고 있어요."],
     [".scroller_block > p", ".scroller_block", /(.*?)&nbsp;is a free-to-win familiar yet fast-paced online stacker in the same genre as tetris, and played by millions across the globe./, "$1는 전 세계 수백만 명이 플레이하고 있는, 무료로 즐길 수 있는 테트리스와 같은 장르의 친숙하면서도 빠르게 진행되는 온라인 스태커 게임이에요."],
-    ["#footer_text", "#footer_text", /thank you for playing (.*?)!/, "$1를 플레이해 주셔서 고마워요!"],
+    ["#footer_text", "#footer", /thank you for playing (.*?)!/, "$1를 플레이해 주셔서 고마워요!"],
     //["#a.electron_jump_also.ns", /get&nbsp;(.*?)&nbsp;DESKTOP/, "$1 데스크톱 받기"], // 왜 안 될까?
     //["#div.electron_jump.ns", /open in&nbsp;(.*?)&nbsp;DESKTOP/, "$1 데스크톱에서 열기"], // 왜 안 될까?
     ["#about_desktop > h1", "#about_desktop", /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
@@ -1341,7 +1341,7 @@ let SELECTOR_TRANSLATIONS = [
     [".rank_sub", ".rank_sub", /(.*?) improvement • last PB was (.*?) ago/, "$1 향상됨 • 마지막 개인 최고 기록은 $2 전이었어요"],
     [".rank_sub", ".rank_sub", /(.*?) behind • last PB was (.*?) ago/, "$1 뒤처짐 • 마지막 개인 최고 기록은 $2 전이었어요"],
     [".menuslide_rollup", ".menuslide_rollup", /SPECTATE ((.*?)*)/, "$1 관전하기"],
-    ["#footer_text", "#footer_text", /change settings in your (.*?) account/, "$1 계정 속 설정을 변경하세요"],
+    ["#footer_text", "#footer", /change settings in your (.*?) account/, "$1 계정 속 설정을 변경하세요"],
     ["#about_supporter > h1", "#about_supporter", /^support&nbsp;(.*?)$/gi, "$1 지원"],
     [".notification > p", "#notifications", /The Duo mod is a <b>TETR.IO Supporter-only feature<\/b> — one of the two players needs Supporter.<br><b>(.*?)<\/b> paid for you this time, but if you want to play Duo with someone who doesn't have Supporter yet, why not <b>help support the game<\/b> and pick some up\?/, "듀오 모드는 <b>TETR.IO 서포터 전용 기능이에요<\/b><br> — 두 플레이어 중 한 명은 서포터가 필요해요.<br>이번에는 <b>$1</b> 님이 비용을 지불했지만, 아직 서포터가 없는 사람과 듀오를 플레이하고 싶으시다면, <b>게임 지원을 도와주시고<\/b> 하나 갖고 가는 건 어떨까요?"],
     ["#registeralt_form", "#registeralt_form", /are you&nbsp;(.*?)\?/, "$1 님이신가요?"],
@@ -1362,10 +1362,10 @@ if (window.IS_ELECTRON) {
     SELECTOR_TRANSLATIONS = SELECTOR_TRANSLATIONS.concat([
         ["#config_electron > h1", ".right_scroller", /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
         ["#config_electron > p", ".right_scroller", /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
-        ["#header_text", "#header_text", /CONFIG \/ (.*?) DESKTOP/, "설정 / $1 데스크톱"],
+        ["#header_text", "#header", /CONFIG \/ (.*?) DESKTOP/, "설정 / $1 데스크톱"],
         [".ns", ".right_scroller", /• hit F5 to reload&nbsp;((.*?)*)/, "• F5를 눌러 $1를 리로드"],
         [".ns", ".right_scroller", /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
-        ["#footer_text", "#footer_text", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
+        ["#footer_text", "#footer", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
     ]);
 
 }
