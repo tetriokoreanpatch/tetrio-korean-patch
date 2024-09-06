@@ -1361,9 +1361,9 @@ const SELECTOR_TRANSLATIONS = [
     [".ns", 'div[data-menuview="config_account_orders"]', /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
     ["#footer_text", "#footer_text", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
 
-    ["#social_relationships > div > p", "#social_relationships", / In ((.*?)*)/, " $1 에 있음"],
-    ["#social_relationships > div > p", "#social_relationships", / Spectating ((.*?)*)/, " $1 관전 중"],
-    ["#social_relationships > div > p", "#social_relationships", / Ending ((.*?)*)/, " $1 끝내는 중"],
+    ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", / In ((.*?)*)/, " $1 에 있음"],
+    ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", / Spectating ((.*?)*)/, " $1 관전 중"],
+    ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", / Ending ((.*?)*)/, " $1 끝내는 중"],
 ]
 
 // CSS 폰트 적용
