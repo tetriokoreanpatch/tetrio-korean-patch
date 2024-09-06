@@ -1337,7 +1337,7 @@ var compiledSelectors = {}
 if (window.IS_ELECTRON) {
     SELECTOR_TRANSLATIONS = SELECTOR_TRANSLATIONS.concat([
         ["#config_electron > h1", ".right_scroller", /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
-        ["#config_electron > p", ".right_scroller", /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;설정 바꾸기"],
+        ["#config_electron > p", ".right_scroller", /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
     ]);
 
 }
