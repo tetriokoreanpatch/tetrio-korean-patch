@@ -1367,7 +1367,7 @@ const SELECTOR_TRANSLATIONS = [
     ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", / Playing ((.*?)*)/, " $1 플레이 중"],
     ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", / Found ((.*?)*)/, " $1 찾음"],
 
-    [".chat_embed_ally", "#ingame_chat_container", /together with ((.*?)*)/, "$1와 함께 플레이"],
+    [".chat_embed_ally", "#ingame_chat_container", /together with ((.*?)*)/, "$1(과)와 함께 플레이"],
 ]
 
 // CSS 폰트 적용
