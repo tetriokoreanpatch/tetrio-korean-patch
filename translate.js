@@ -1294,6 +1294,24 @@ const TRANSLATIONS = {
     "Third-party modifications to TETR.IO are not supported by the TETR.IO team and may have compatibility, performance and safety issues.": "TETR.IO에 대한 제3자의 수정은 TETR.IO 팀에서 지원하지 않으며 호환성, 성능 및 안전 문제가 있을 수 있어요.",
     "Do not report any issues while using third-party modifications. Modifications that alter gameplay are strictly forbidden.": "제3자 수정 사항을 사용하는 동안에는 어떤 문제도 신고하지 마세요. 게임플레이를 변경하는 수정은 엄격히 금지돼요.",
     "This message will disappear after 10 seconds": "이 메시지는 10초 후에 사라져요",
+
+    "you are using the desktop client! this means you can:": "데스크톱 클라이언트를 사용하고 있어요! 이는 다음을 수행할 수 있음을 의미해요:",
+    "• hit F11 to go FULL SCREEN": "• F11을 눌러 전체 화면으로 전환",
+    // hit f5 is in selector translation
+    "• hit CTRL+SHIFT+I to open the CONSOLE": "• CTRL+SHIFT+I를 눌러 콘솔 열기",
+    "as well as edit options you see below": "추가로 아래에 보이는 옵션 수정",
+
+    "SKIP LOGIN SCREEN": "로그인 화면 건너뛰기",
+    "NEVER": "안 함",
+    "WHEN NEEDED": "필요할 때",
+    "ALWAYS": "항상",
+    "enable HARD VSYNC": "하드웨어 수직 동기화 사용",
+    "FRAMERATE LIMITER": "프레임 제한",
+    "install updates automatically if possible": "가능할 경우 업데이트 자동 설치",
+    "enable DISCORD RICH PRESENCE": "디스코드 RICH PRESENCE 활성화",
+    "flash taskbar icon": "작업 표시줄 아이콘 깜빡이기",
+    "streamer compatibility mode (slow!)": "스트리머 호환 모드(느림!)",
+    "disable third-party advertisements": "타사 광고 비활성화",
 };
 
 /**
@@ -1338,6 +1356,10 @@ if (window.IS_ELECTRON) {
     SELECTOR_TRANSLATIONS = SELECTOR_TRANSLATIONS.concat([
         ["#config_electron > h1", ".right_scroller", /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
         ["#config_electron > p", ".right_scroller", /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
+        ["#header_text", "#header_text", /CONFIG \/ (.*?) DESKTOP/, "설정 / $1 데스크톱"],
+        [".ns", ".right_scroller", /• hit F5 to reload&nbsp;(.*?)/, "F5를 눌러 $1를 리로드"],
+        [".ns", ".right_scroller", /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
+        ["#footer_text", "#footer", /change (.*?) DESKTOP settings/, "#1 데스크톱 설정 바꾸기"],
     ]);
 
 }
