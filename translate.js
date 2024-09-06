@@ -1366,6 +1366,7 @@ const SELECTOR_TRANSLATIONS = [
 
     ["#social_relationships > div > p", "#social_relationships", / In ((.*?))/, " $1 에 있음"],
     ["#social_relationships > div > p", "#social_relationships", / Spectating ((.*?))/, " $1 관전 중"],
+    ["#social_relationships > div > p", "#social_relationships", / Ending ((.*?))/, " $1 끝내는 중"],
 ]
 
 // CSS 폰트 적용
