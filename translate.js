@@ -1461,6 +1461,10 @@ function isBlacklisted(node) {
     if (node.matches(".scroller_player>h1")) {
         return true;
     }
+    // 소셜
+    if (node.matches(".social_relationship > h1 > span, #social_dm_username")) {
+        return true;
+    }
 
     return false;
 }
