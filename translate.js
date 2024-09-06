@@ -1349,6 +1349,9 @@ let SELECTOR_TRANSLATIONS = [
     ["#referee_top", "#referee_top", /VERSUS ((.*?)*)/, "대결 $1"],
     ["#referee_top", "#referee_top", /TETRA LEAGUE ((.*?)*)/, "테트라 리그 $1"],
     ["#referee_top", "#referee_top", /(.*?) FT((.*?)*)/, "$1 $2선승제"],
+
+    ["#roommodeblurb", "#roommodeblurb", /VERSUS ((.*?)*)/, "대결 $1"],
+    ["#roommodeblurb", "#roommodeblurb", /(.*?) FT((.*?)*)/, "$1 $2선승제"],
 ]
 var compiledSelectors = {}
 
