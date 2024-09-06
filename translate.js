@@ -1259,6 +1259,7 @@ const TRANSLATIONS = {
     "REASON: ribbon expired": "사유: 리본 만료됨",
     "if you are certain this error is not on your side, please report it.": "이 오류가 본인만의 것이 아니라고 확신하는 경우 신고해 주세요.",
     " online now": " 온라인 상태",
+    " has come online": " 온라인 상태가 됨",
     " Away": " 자리 비움",
     " Busy": "바쁨",
     " Offline": " 오프라인",
