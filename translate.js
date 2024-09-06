@@ -1610,7 +1610,8 @@ for (const [selector, detectSelector, regex, replace] of SELECTOR_TRANSLATIONS) 
         })();
     });
     var sel = compiledSelectors[detectSelector]();
-    console.log("translate target: " + sel);
+    console.log("translate target:");
+    console.log(sel);
     for (var s of sel) {
         obs.observe(s, { childList: true, subtree: true });
     }
