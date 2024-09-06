@@ -246,6 +246,9 @@ const TRANSLATIONS = {
     "ABORTED!": "중단됨!",
     "MATCH POINT": "매치 포인트",
     "TIEBREAKER": "타이브레이커",
+    "TETRA LEAGUE FT3": "테트라 리그 3선승제",
+    "TETRA LEAGUE FT5": "테트라 리그 5선승제",
+    "TETRA LEAGUE FT7": "테트라 리그 7선승제",
     "IN QUEUE -": "개의 대기열 -",
     "IN GAME": "게임 중",
     "estimated queue time:": "예상 대기 시간:",
@@ -1347,7 +1350,6 @@ let SELECTOR_TRANSLATIONS = [
     [".ig_chat_message > p", "#ingame_chat_container", /Welcome to Quick Play chat! Please remember to be civil to your opponents - chat is actively monitored.\n\nThis chat is linked with (.*?)our Discord server<\/a>\./, "빠른 플레이 채팅에 오신 것을 환영해요! 채팅은 적극적으로 모니터링되고 있으니 상대방에게 예의를 지켜야 한다는 점을 잊지 마세요.\n\n이 채팅은 $1저희 Discord 서버</a>와 연결되어 있어요."],
     [".notification > p", "#notifications", /changing (.*?) requires a restart to go in effect. hit F5 on your keyboard to restart\./, "$1(을)를 변경하면 다시 시작해야 적용돼요. 다시 시작하려면 키보드에서 F5를 누르세요."],
     ["#referee_top", "#referee_top", /VERSUS ((.*?)*)/, "대결 $1"],
-    ["#referee_top", "#referee_top", /TETRA LEAGUE ((.*?)*)/, "테트라 리그 $1"],
     ["#referee_top", "#referee_top", /(.*?) FT((.*?)*)/, "$1 $2선승제"],
 
     ["#roommodeblurb", "#roommodeblurb", /VERSUS ((.*?)*)/, "대결 $1"],
