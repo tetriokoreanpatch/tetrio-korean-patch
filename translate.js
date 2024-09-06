@@ -1388,6 +1388,10 @@ const fontFace = `
       font-family: 'HUN', 'BMHANNAAir' !important;
       content: "리플레이 ID:" !important;
     }
+
+    #config_account_supporter_bar {
+        font-family: 'C', 'Pretendard JP' !important;
+    }
   `;
 
 const style = document.createElement('style');
