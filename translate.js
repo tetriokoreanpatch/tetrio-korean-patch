@@ -1595,8 +1595,10 @@ const observer = new MutationObserver(mutations => {
 observer.observe(document.body, { childList: true, subtree: true });
 
 for (const [selector, detectSelector, regex, replace] of SELECTOR_TRANSLATIONS) {
+    var sel = compiledSelectors[detectSelector]();
     var obs = new MutationObserver(mutations => {
         (async () => {
+            console.log(sel);
             const targetElements = compiledSelectors[selector]();
 
             for (var targetElement of targetElements) {
@@ -1609,7 +1611,7 @@ for (const [selector, detectSelector, regex, replace] of SELECTOR_TRANSLATIONS) 
             }
         })();
     });
-    var sel = compiledSelectors[detectSelector]();
+    
     console.log("translate target:");
     console.log(sel);
     for (var s of sel) {
