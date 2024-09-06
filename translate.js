@@ -1334,6 +1334,14 @@ const SELECTOR_TRANSLATIONS = [
 ]
 var compiledSelectors = {}
 
+if (window.IS_ELECTRON) {
+    SELECTOR_TRANSLATIONS = SELECTOR_TRANSLATIONS.concat([
+        ["#config_electron > h1", ".right_scroller", /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
+        ["#config_electron > p", ".right_scroller", /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;설정 바꾸기"],
+    ]);
+
+}
+
 // CSS 폰트 적용
 const fontFace = `
     @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css");
