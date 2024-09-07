@@ -1367,7 +1367,7 @@ const SELECTOR_TRANSLATIONS = [
     ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", /Ending ((.*?)*)/, "$1 끝내는 중"],
     ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", /Playing ((.*?)*)/, "$1 플레이 중"],
     ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", /Found ((.*?)*)/, "$1 찾음"],
-    ["#social_status", "#social_status", /In (.*?)<img/, "$1 에 있음<img"],
+    ["#social_status", "#social_status", /In (.*?) <img/, "$1 에 있음 <img"],
     ["#social_status", "#social_status", /Spectating (.*?) <img/, "$1 관전 중 <img"],
     ["#social_status", "#social_status", /Ending (.*?) <img/, "$1 끝내는 중 <img"],
     ["#social_status", "#social_status", /Playing (.*?) <img/, "$1 플레이 중 <img"],
