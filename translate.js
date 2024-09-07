@@ -1361,11 +1361,11 @@ const SELECTOR_TRANSLATIONS = [
     [".ns", 'div[data-menuview="config_account_orders"]', /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
     ["#footer_text", "#footer_text", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
 
-    ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", / In ((.*?)*)/, " $1 에 있음"],
-    ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", / Spectating ((.*?)*)/, " $1 관전 중"],
-    ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", / Ending ((.*?)*)/, " $1 끝내는 중"],
-    ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", / Playing ((.*?)*)/, " $1 플레이 중"],
-    ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", / Found ((.*?)*)/, " $1 찾음"],
+    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", / In ((.*?)*)/, " $1 에 있음"],
+    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", / Spectating ((.*?)*)/, " $1 관전 중"],
+    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", / Ending ((.*?)*)/, " $1 끝내는 중"],
+    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", / Playing ((.*?)*)/, " $1 플레이 중"],
+    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", / Found ((.*?)*)/, " $1 찾음"],
 
     [".chat_embed_ally", "#ingame_chat_container", /together with ((.*?)*)/, "$1(과)와 함께 플레이"],
 ]
