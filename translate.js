@@ -131,6 +131,7 @@ const TRANSLATIONS = {
     "TETRA LEAGUE": "테트라 리그",
     "PEOPLE": "피플",
     "In Menus ": "메뉴 화면 ",
+    " In Menus": " 메뉴 화면",
     "Ǖ find someone…": "Ǖ 누군가를 찾으세요…",
     "YOU ARE SILENCED": "침묵 제재 상태예요",
     "Stop spamming or you will be silenced!": "도배를 멈추세요! 계속 도배하면 침묵 제재 상태가 돼요!",
@@ -1361,11 +1362,11 @@ const SELECTOR_TRANSLATIONS = [
     [".ns", 'div[data-menuview="config_account_orders"]', /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
     ["#footer_text", "#footer_text", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
 
-    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", / In ((.*?)*)/, " $1 에 있음"],
-    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", / Spectating ((.*?)*)/, " $1 관전 중"],
-    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", / Ending ((.*?)*)/, " $1 끝내는 중"],
-    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", / Playing ((.*?)*)/, " $1 플레이 중"],
-    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", / Found ((.*?)*)/, " $1 찾음"],
+    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", /In ((.*?)*)/, "$1 에 있음"],
+    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", /Spectating ((.*?)*)/, "$1 관전 중"],
+    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", /Ending ((.*?)*)/, "$1 끝내는 중"],
+    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", /Playing ((.*?)*)/, "$1 플레이 중"],
+    ["#social_relationships > div > p, #social_dm_status, #social_status", "#social_relationships, #social_dm_status, #social_status", /Found ((.*?)*)/, "$1 찾음"],
 
     [".chat_embed_ally", "#ingame_chat_container", /together with ((.*?)*)/, "$1(과)와 함께 플레이"],
 ]
