@@ -1314,6 +1314,7 @@ const TRANSLATIONS = {
     "flash taskbar icon": "작업 표시줄 아이콘 깜빡이기",
     "streamer compatibility mode (slow!)": "스트리머 호환 모드(느림!)",
     "disable third-party advertisements": "타사 광고 비활성화",
+    "EXIT TETR.IO?": "TETR.IO를 종료하시겠어요?",
 };
 
 /**
