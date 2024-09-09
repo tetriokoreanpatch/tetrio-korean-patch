@@ -65,7 +65,6 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
         return true;
     },
     onStop: async (storage, url, src, callback) => {
-        src = `String.prototype.addFront = function (str) {return str + this.toString();};\n` + src;
         const SOURCE_TRANSLATIONS = {
             '"SINGLE"': '"싱글"',
             '"DOUBLE"': '"더블"',
@@ -104,8 +103,8 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             "`${n} days`": "`${n} 일`",
             "`${n} months`": "`${n} 개월`",
 
-            ".toLocaleString()": `.toLocaleString('ko-KR').addFront('<p class="BMHANNAAirDMJ">').concat("</p>")`,
-            '.toLocaleString("en-US")': `.toLocaleString('ko-KR').addFront('<p class="BMHANNAAirDMJ">').concat("</p>")`,
+            ".toLocaleString()": `.toLocaleString('ko-KR')`,
+            '.toLocaleString("en-US")': `.toLocaleString('ko-KR')`,
         }
         const SOURCE_TRANSLATIONS_REGEX = [
             [/create\("(.*?)\\f3S LEFT"\)/gi, 'create\("$1\\f3초 남았습니다"\)']
