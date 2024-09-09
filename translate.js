@@ -246,6 +246,7 @@ const TRANSLATIONS = {
     "ABORTED!": "중단됨!",
     "MATCH POINT": "매치 포인트",
     "TIEBREAKER": "타이브레이커",
+    "DEUCE": "듀스",
     "IN QUEUE -": "개의 대기열 -",
     "IN GAME": "게임 중",
     "estimated queue time:": "예상 대기 시간:",
