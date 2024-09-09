@@ -1418,7 +1418,7 @@ const fontFace = `
       src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
       font-weight: normal;
       font-style: normal;
-      size-adjust: 120%;
+      size-adjust: 110%;
     }
   
     @font-face {
