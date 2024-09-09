@@ -1377,9 +1377,9 @@ const SELECTOR_TRANSLATIONS = [
     ["#social_status", "#social_status", /Found (.*?) <img/, "$1 찾음 <img"],
 
     [".chat_embed_ally", "#ingame_chat_container", /together with ((.*?)*)/, "$1(과)와 함께 플레이"],
-    ["#zenith_zenithtimer, #tetra_zenithtimer", "#zenith_zenithtimer, #tetra_zenithtimer", /LEADERBOARD CYCLED (.*?) AGO/, "<span class='BMHANNAAirDMJ'>$1 전 리더보드 초기화됨</span>"],
-    ["#zenith_zenithtimer, #tetra_zenithtimer", "#zenith_zenithtimer, #tetra_zenithtimer", /LEADERBOARD CYCLES IN ((.*?)*)/, "<span class='BMHANNAAirDMJ'>$1 뒤 리더보드 초기화됨</span>"],
-    ["#dialogs > .tetra_modal > h3", "#dialogs", /JOINED (.*?) AGO - /, "<span class='BMHANNAAirDMJ'>$1 전에 가입함</span> - "],
+    ["#zenith_zenithtimer, #tetra_zenithtimer", "#zenith_zenithtimer, #tetra_zenithtimer", /LEADERBOARD CYCLED (.*?) AGO/, "<div class='BMHANNAAirDMJ'>$1 전 리더보드 초기화됨</div>"],
+    ["#zenith_zenithtimer, #tetra_zenithtimer", "#zenith_zenithtimer, #tetra_zenithtimer", /LEADERBOARD CYCLES IN ((.*?)*)/, "<div class='BMHANNAAirDMJ'>$1 뒤 리더보드 초기화됨</div>"],
+    ["#dialogs > .tetra_modal > h3", "#dialogs", /JOINED (.*?) AGO - /, "<div class='BMHANNAAirDMJ'>$1 전에 가입함</div> - "],
 ]
 
 // CSS 폰트 적용
@@ -1393,6 +1393,7 @@ const fontFace = `
       font-style: normal;
     }
     @font-face {
+      display: inline;
       font-family: 'BMHANNAAirDMJ';
       src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
       font-weight: normal;
