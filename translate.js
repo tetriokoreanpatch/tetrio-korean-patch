@@ -1315,6 +1315,8 @@ const TRANSLATIONS = {
     "streamer compatibility mode (slow!)": "스트리머 호환 모드(느림!)",
     "disable third-party advertisements": "타사 광고 비활성화",
     "EXIT TETR.IO?": "TETR.IO를 종료하시겠어요?",
+
+    "career best ": "경력 최고 ",
 };
 
 /**
@@ -1377,6 +1379,7 @@ const SELECTOR_TRANSLATIONS = [
     [".chat_embed_ally", "#ingame_chat_container", /together with ((.*?)*)/, "$1(과)와 함께 플레이"],
     ["#zenith_zenithtimer", "#zenith_zenithtimer", /LEADERBOARD CYCLED (.*?) AGO/, "$1 전 리더보드 초기화됨"],
     ["#zenith_zenithtimer", "#zenith_zenithtimer", /LEADERBOARD CYCLES IN ((.*?)*)/, "$1 뒤 리더보드 초기화됨"],
+    ["#dialogs > .tetra_modal > h2", "#dialogs", /JOINED (.*?) AGO - /, "$1 전 가입함 - "],
 ]
 
 // CSS 폰트 적용
