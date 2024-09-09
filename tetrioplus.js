@@ -105,7 +105,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             "`${n} months`": "`${n} 개월`",
 
             ".toLocaleString()": `.toLocaleString('ko-KR').addFront('<p class="BMHANNAAirDMJ">').concat("</p>")`,
-            '.toLocaleString("en-US")': `.toLocaleString('ko-KR').addFront('<p class="BMHANNAAirDMJ">').concat("</p")`,
+            '.toLocaleString("en-US")': `.toLocaleString('ko-KR').addFront('<p class="BMHANNAAirDMJ">').concat("</p>")`,
         }
         const SOURCE_TRANSLATIONS_REGEX = [
             [/create\("(.*?)\\f3S LEFT"\)/gi, 'create\("$1\\f3초 남았습니다"\)']
