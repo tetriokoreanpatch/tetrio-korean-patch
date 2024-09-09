@@ -1381,9 +1381,11 @@ const SELECTOR_TRANSLATIONS = [
     ["#dialogs > .tetra_modal > h3", "#dialogs", /JOINED (.*?) AGO - /, "<p class='BMHANNAAirDMJ'>$1 전에 가입함</p> - "],
     
     ["#footer_text", "#footer_text", /(.*?) played by (.*?) on ((.*?)*)/, "$2 이(가) $3 에 플레이 한 $1"],
+    ["#footer_text", "#footer_text", /(.*?) versus (.*?) played on ((.*?)*)/, "$3 에 플레이 한 $1 vs $2"],
     ["#footer_text", "#footer_text", /플레이 한 40 LINES/, "플레이 한 40줄"],
     ["#footer_text", "#footer_text", /플레이 한 BLITZ/, "플레이 한 블리츠"],
     ["#footer_text", "#footer_text", /플레이 한 QUICK PLAY/, "플레이 한 빠른 플레이"],
+    ["#footer_text", "#footer_text", /플레이 한 EXPERT QUICK PLAY/, "플레이 한 전문가용 빠른 플레이"],
 ]
 
 // CSS 폰트 적용
