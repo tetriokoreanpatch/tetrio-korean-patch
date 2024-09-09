@@ -55,8 +55,6 @@ const TRANSLATIONS = {
     "opening replay": "리플레이 여는 중 ",
     "FINAL SCORE": "최종 점수",
     "STATS": "통계",
-    "BLITZ played by ": "블리츠 플레이 by ",
-    "40 LINES played by ": "40줄 플레이 by ",
     "OVERVIEW": "개요",
     "FULL": "전체",
     "LEVEL": "레벨",
@@ -1380,6 +1378,11 @@ const SELECTOR_TRANSLATIONS = [
     ["#zenith_zenithtimer, #tetra_zenithtimer", "#zenith_zenithtimer, #tetra_zenithtimer", /LEADERBOARD CYCLED (.*?) AGO/, "<p class='BMHANNAAirDMJ'>$1 전 리더보드 초기화됨</p>"],
     ["#zenith_zenithtimer, #tetra_zenithtimer", "#zenith_zenithtimer, #tetra_zenithtimer", /LEADERBOARD CYCLES IN ((.*?)*)/, "<p class='BMHANNAAirDMJ'>$1 뒤 리더보드 초기화됨</p>"],
     ["#dialogs > .tetra_modal > h3", "#dialogs", /JOINED (.*?) AGO - /, "<p class='BMHANNAAirDMJ'>$1 전에 가입함</p> - "],
+    
+    ["#footer_text", "#footer_text", /(.*?) played by (.*?) on ((.*?)*)/, "$2 이(가) $3 에 플레이 한 $1"],
+    ["#footer_text", "#footer_text", /플레이 한 40 LINES/, "플레이 한 40줄"],
+    ["#footer_text", "#footer_text", /플레이 한 BLITZ/, "플레이 한 블리츠"],
+    ["#footer_text", "#footer_text", /플레이 한 QUICK PLAY/, "플레이 한 빠른 플레이"],
 ]
 
 // CSS 폰트 적용
