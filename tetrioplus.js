@@ -65,7 +65,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
         return true;
     },
     onStop: async (storage, url, src, callback) => {
-        src = `String.prototype.addFront = function (str) {return str + this.toString();}\n\n` + src;
+        src = `String.prototype.addFront = function (str) {return str + this.toString();};\n` + src;
         const SOURCE_TRANSLATIONS = {
             '"SINGLE"': '"싱글"',
             '"DOUBLE"': '"더블"',
