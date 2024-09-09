@@ -197,6 +197,7 @@ const TRANSLATIONS = {
     "CLICK TO INVITE A FRIEND": "클릭하여 친구 초대하기",
     "reset": "초기화",
     "YOUR FINAL ALTITUDE": "최종 고도",
+    "FINAL ALTITUDE": "최종 고도",
     "THIS WEEK'S COUNTRY RANK": "이번 주의 국가 순위",
     "THIS WEEK'S GLOBAL RANK": "이번 주의 글로벌 순위",
     "SEND TO CHAT": "채팅에 보내기",
@@ -1356,11 +1357,11 @@ const SELECTOR_TRANSLATIONS = [
     ["#referee_top, #roommodeblurb", "#referee_top, #roommodeblurb", /VERSUS ((.*?)*)/, "대결 $1"],
     ["#referee_top, #roommodeblurb", "#referee_top, #roommodeblurb", /(.*?) FT((.*?)*)/, "$1 $2선승제"],
 
-    ["#config_electron > h1", 'div[data-menuview="config_account_orders"]', /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
-    ["#config_electron > p", 'div[data-menuview="config_account_orders"]', /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
+    ["#config_electron > h1", 'div[data-menuview="config"]', /(.*?)&nbsp;DESKTOP/, "$1 데스크톱"],
+    ["#config_electron > p", 'div[data-menuview="config"]', /change settings for&nbsp;(.*?)&nbsp;DESKTOP/, "$1&nbsp;데스크톱 설정 바꾸기"],
     ["#header_text", "#header_text", /CONFIG \/ (.*?) DESKTOP/, "설정 / $1 데스크톱"],
-    [".ns", 'div[data-menuview="config_account_orders"]', /• hit F5 to reload&nbsp;((.*?)*)/, "• F5를 눌러 $1를 리로드"],
-    [".ns", 'div[data-menuview="config_account_orders"]', /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
+    ['div[data-menuview="config_electron"] > .scroller_block > .ns', 'div[data-menuview="config_electron"]', /• hit F5 to reload&nbsp;((.*?)*)/, "• F5를 눌러 $1를 리로드"],
+    ['div[data-menuview="config_electron"] > .scroller_block > .ns', 'div[data-menuview="config_electron"]', /(.*?)&nbsp;DESKTOP V(.*?)/, "$1&nbsp;데스크톱 V$2"],
     ["#footer_text", "#footer_text", /change (.*?) DESKTOP settings/, "$1 데스크톱 설정 바꾸기"],
 
     ["#social_relationships > div > p, #social_dm_status", "#social_relationships, #social_dm_status", /In ((.*?)*)/, "$1 에 있음"],
