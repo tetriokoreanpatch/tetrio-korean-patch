@@ -1375,6 +1375,8 @@ const SELECTOR_TRANSLATIONS = [
     ["#social_status", "#social_status", /Found (.*?) <img/, "$1 찾음 <img"],
 
     [".chat_embed_ally", "#ingame_chat_container", /together with ((.*?)*)/, "$1(과)와 함께 플레이"],
+    ["#zenith_zenithtimer", "#zenith_zenithtimer", /LEADERBOARD CYCLED (.*?) AGO/, "$1 전 리더보드 초기화됨"],
+    ["#zenith_zenithtimer", "#zenith_zenithtimer", /LEADERBOARD CYCLES IN ((.*?)*)/, "$1 뒤 리더보드 초기화됨"],
 ]
 
 // CSS 폰트 적용
