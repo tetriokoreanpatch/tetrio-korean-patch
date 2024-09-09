@@ -97,7 +97,12 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             '"B2B \\fc3X":`B2B \\fc3X\\f5': '"백투백 \\fc3X":`백투백 \\fc3X\\f5',
             '"B2B \\fc3X":`B2B \\fc3X\\f5${t}`': '"백투백 \\fc3X":`백투백 \\fc3X\\f5${t}`',
             "${r} \\fc3PLAYING NOW": "${r} \\fc3명 플레이 중",
-            "rasterizeSize:1024": "rasterizeSize:8192"
+            "rasterizeSize:1024": "rasterizeSize:8192",
+            "`${n} seconds`": "`${n} 초`",
+            "`${n} minutes`": "`${n} 분`",
+            "`${n} hours`": "`${n} 시간`",
+            "`${n} days`": "`${n} 일`",
+            "`${n} months`": "`${n} 개월`",
         }
         const SOURCE_TRANSLATIONS_REGEX = [
             [/create\("(.*?)\\f3S LEFT"\)/gi, 'create\("$1\\f3초 남았습니다"\)']
