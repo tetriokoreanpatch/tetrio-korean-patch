@@ -1420,7 +1420,7 @@ const fontFace = `
 
     .BMHANNAAirDMJ {
         display: inline;
-        font-family: 'BMHANNAAirDMJ';
+        font-family: 'HUN', 'BMHANNAAirDMJ';
     }
   `;
 
