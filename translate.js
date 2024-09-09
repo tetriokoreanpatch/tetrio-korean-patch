@@ -1377,9 +1377,9 @@ const SELECTOR_TRANSLATIONS = [
     ["#social_status", "#social_status", /Found (.*?) <img/, "$1 찾음 <img"],
 
     [".chat_embed_ally", "#ingame_chat_container", /together with ((.*?)*)/, "$1(과)와 함께 플레이"],
-    ["#zenith_zenithtimer", "#zenith_zenithtimer", /LEADERBOARD CYCLED (.*?) AGO/, "$1 전 리더보드 초기화됨"],
-    ["#zenith_zenithtimer", "#zenith_zenithtimer", /LEADERBOARD CYCLES IN ((.*?)*)/, "$1 뒤 리더보드 초기화됨"],
-    ["#dialogs > .tetra_modal > h3", "#dialogs", /JOINED (.*?) AGO - /, "$1 전에 가입함 - "],
+    ["#zenith_zenithtimer", "#zenith_zenithtimer", /LEADERBOARD CYCLED (.*?) AGO/, "<span style='font-size: 16px'>$1 전 리더보드 초기화됨</span>"],
+    ["#zenith_zenithtimer", "#zenith_zenithtimer", /LEADERBOARD CYCLES IN ((.*?)*)/, "<span style='font-size: 16px'>$1 뒤 리더보드 초기화됨</span>"],
+    ["#dialogs > .tetra_modal > h3", "#dialogs", /JOINED (.*?) AGO - /, "<span style='font-size: 16px'>$1 전에 가입함</span> - "],
 ]
 
 // CSS 폰트 적용
@@ -1391,7 +1391,6 @@ const fontFace = `
       src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
       font-weight: normal;
       font-style: normal;
-      size-adjust: 110%;
     }
   
     @font-face {
