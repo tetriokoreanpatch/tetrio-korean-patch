@@ -13,15 +13,15 @@ trans = """
             '"%%PIECE%%-spin"': '"%%PIECE%%-스핀"',
             '"back-to-back"': '"백-투-백"',
             '"BACK-TO-BACK"': '"백-투-백"',
-            '"ALL\\nCLEAR"': '"\\fc5 올 클리어"',
+            '"ALL\\nCLEAR"': '"올\\n클리어"',
             //'this.effects.set("allclear",new lc.generic.ns.shout(this,{size:60': 'this.effects.set("allclear",new lc.generic.ns.shout(this,{size:55',
             '"COLOR\\nCLEAR"': '"컬러\\n클리어"',
             '"LEVEL\\nCOMPLETE"': '"레벨 완료"',
             '{timer:"time",stopwatch:"time",level:"level",lines:"lines",allclears:"all clears",hold:"hold",pieces:"pieces",pieces_duo:"pieces",finesse_l:"finesse",finesse:"finesse",keys:"inputs",score:"score",spp:"score",garbage:"garbage",attack:"attack",attack_duo:"attack",vs:"VS score",kills:"KO\'s",kills_duo:"KO\'s",placement:"placement"};':
                 '{timer:"시간",stopwatch:"시간",level:"레벨",lines:"줄",allclears:"올 클리어",hold:"홀드",pieces:"블록",pieces_duo:"블록",finesse_l:"피네스",finesse:"피네스",keys:"입력",score:"점수",spp:"점수",garbage:"쓰레기 줄",attack:"공격",attack_duo:"공격",vs:"경쟁 점수",kills:"처치",kills_duo:"처치",placement:"놓은 수"};',
-            'create("ready")': 'create("준비")',
-            'create("GO!")': 'create("시작!")',
-            'this.self.hm.H.board.fx("countdown_stride").create("set"),this.sfx.Play("countdown4"),': '',
+            'create("ready")': 'create("레디")',
+            'create("set")': 'create("셋")',
+            'create("GO!")': 'create(e.stride?"고!":"시작!")',
             'create(t.stats.combo-1+" \\fc3COMBO")': 'create(t.stats.combo-1+" \\fc3콤보")',
             '${t.finesse.faults} fault${1===t.finesse.faults?"":"s"}': '실수 ${t.finesse.faults}개',
             '["","HALL OF BEGINNINGS","THE HOTEL","THE CASINO","THE ARENA","THE MUSEUM","ABANDONED OFFICES","THE LABORATORY","THE CORE","CORRUPTION","PLATFORM OF THE GODS"]':
@@ -33,7 +33,17 @@ trans = """
             "`floor ${t+1}`": "`${t+1}층`",
             "create(`\\fc3FLOOR \\fc9${l}\\f3\\n\\n${e[l]}`)": "create(`\\fc9${l}\\fc4층\\f3\\n\\n${e[l]}`)",
             '"B2B \\fc3X":`B2B \\fc3X\\f5': '"백투백 \\fc3X":`백투백 \\fc3X\\f5',
+            '"B2B \\fc3X":`B2B \\fc3X\\f5${t}`': '"백투백 \\fc3X":`백투백 \\fc3X\\f5${t}`',
             "${r} \\fc3PLAYING NOW": "${r} \\fc3명 플레이 중",
+            "rasterizeSize:1024": "rasterizeSize:4096",
+            "`${n} seconds`": "`${n}초`",
+            "`${n} minutes`": "`${n}분`",
+            "`${n} hours`": "`${n}시간`",
+            "`${n} days`": "`${n}일`",
+            "`${n} months`": "`${n}개월`",
+
+            ".toLocaleString()": `.toLocaleString('ko-KR')`,
+            '.toLocaleString("en-US")': `.toLocaleString('ko-KR')`,
         }
         const SOURCE_TRANSLATIONS_REGEX = [
             [/create\("(.*?)\\f3S LEFT"\)/gi, 'create\("$1\\f3초 남았습니다"\)']
