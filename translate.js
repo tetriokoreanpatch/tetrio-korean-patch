@@ -1137,6 +1137,9 @@ const TRANSLATIONS = {
     "TETR.IO's premier room settings. optimized for battles with small groups or duels against friends and foes alike!": "TETR.IO 최고의 방 설정. 소규모 그룹의 전투나 친구 및 적과의 배틀에 최적화돼 있어요!",
     //"tetra league": "테트라 리그",
     "settings copied directly from TETR.IO's matchmaking rooms! margin times and match goals are shifted slightly with duels in mind.": "TETR.IO의 매치 메이킹 방에서 직접 복사해 온 설정이에요! 결투를 염두에 두고 마진 시간과 매치 목표를 살짝 바꿨어요.",
+
+    "TETRA LEAGUE (season 1)": "테트라 리그 (시즌 1)",
+    "last season's TETRA LEAGUE rules!": "지난 시즌의 TETRA LEAGUE 규칙이예요!",
     "ENFORCED DELAYS": "강제 딜레이",
     //"enforced delays": "강제 딜레이",
     "this preset introduces several forms of enforced handling which introduces a generous skill ceiling! puts a focus on efficient and consistent play, as opposed to deafeningly fast rounds.": "이 프리셋은 다양한 형태의 강제적인 핸들링을 도입하여 넉넉한 스킬 상한선을 제공해요! 귀청이 찢어질 듯한 빠른 라운드보다는, 효율적이고 일관된 플레이에 중점을 두고 있어요.",
