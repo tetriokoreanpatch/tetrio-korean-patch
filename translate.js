@@ -676,6 +676,7 @@ const TRANSLATIONS = {
     "receive bonuses for spinning all pieces": "어떤 블록을 회전시켜도 보너스를 받아요",
     "HANDHELD": "경량화",
     //"handheld": "경량화",
+    
     "receive bonuses for spinning all pieces BUT attacks are halved except for T-SPINS": "어떤 블럭을 회전시켜도 보너스를 받지만, T-스핀을 제외한 공격은 절반으로 줄어들어요",
     "recieve bonuses for spinning all pieces. non T-SPINS attacks are halved. pieces use 4-corner detection": "어떤 블록을 회전시켜도 보너스를 받아요. T-스핀이 아닌 공격은 절반으로 감소해요. 블록은 4-코너 감지를 사용해요",
     "STUPID": "멍청",
