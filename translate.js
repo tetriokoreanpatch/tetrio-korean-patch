@@ -1393,7 +1393,6 @@ const fontFace = `
       font-style: normal;
     }
     @font-face {
-      display: inline;
       font-family: 'BMHANNAAirDMJ';
       src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
       font-weight: normal;
@@ -1420,6 +1419,7 @@ const fontFace = `
     }
 
     .BMHANNAAirDMJ {
+        display: inline;
         font-family: 'BMHANNAAirDMJ';
     }
   `;
