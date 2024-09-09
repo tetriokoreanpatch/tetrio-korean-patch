@@ -1419,6 +1419,7 @@ const fontFace = `
     }
 
     .BMHANNAAirDMJ {
+        display: inline;
         font-family: 'HUN', 'BMHANNAAirDMJ';
     }
   `;
