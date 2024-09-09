@@ -1385,6 +1385,7 @@ const SELECTOR_TRANSLATIONS = [
 // CSS 폰트 적용
 const fontFace = `
     @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp.min.css");
+    @import url('//fonts.googleapis.com/earlyaccess/hanna.css');
   
     @font-face {
       font-family: 'BMHANNAAir';
@@ -1422,7 +1423,7 @@ function replaceFontFamily(element) {
         const computedStyle = window.getComputedStyle(element);
         const fnt = computedStyle.fontFamily.trim();
         if (fnt === 'HUN' && !element.matches('#now_playing_jp')) {
-            element.style.fontFamily = `'HUN', 'BMHANNAAir'`;
+            element.style.fontFamily = `'HUN', 'Hanna'`;
         }
         if (fnt === 'PFW') {
             element.style.fontFamily = `'PFW', 'Orbit-Regular'`;
