@@ -1379,7 +1379,7 @@ const SELECTOR_TRANSLATIONS = [
     [".chat_embed_ally", "#ingame_chat_container", /together with ((.*?)*)/, "$1(과)와 함께 플레이"],
     ["#zenith_zenithtimer", "#zenith_zenithtimer", /LEADERBOARD CYCLED (.*?) AGO/, "$1 전 리더보드 초기화됨"],
     ["#zenith_zenithtimer", "#zenith_zenithtimer", /LEADERBOARD CYCLES IN ((.*?)*)/, "$1 뒤 리더보드 초기화됨"],
-    ["#dialogs > .tetra_modal > h3", "#dialogs", /JOINED (.*?) AGO - /, "$1 전 가입함 - "],
+    ["#dialogs > .tetra_modal > h3", "#dialogs", /JOINED (.*?) AGO - /, "$1 전에 가입함 - "],
 ]
 
 // CSS 폰트 적용
