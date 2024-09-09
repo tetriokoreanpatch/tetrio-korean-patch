@@ -96,6 +96,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             "create(`\\fc3FLOOR \\fc9${l}\\f3\\n\\n${e[l]}`)": "create(`\\fc9${l}\\fc4층\\f3\\n\\n${e[l]}`)",
             '"B2B \\fc3X":`B2B \\fc3X\\f5': '"백투백 \\fc3X":`백투백 \\fc3X\\f5',
             "${r} \\fc3PLAYING NOW": "${r} \\fc3명 플레이 중",
+            "this._textDirty=!0": "this._textDirty=!1",
         }
         const SOURCE_TRANSLATIONS_REGEX = [
             [/create\("(.*?)\\f3S LEFT"\)/gi, 'create\("$1\\f3초 남았습니다"\)']
