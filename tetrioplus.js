@@ -95,6 +95,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             "`floor ${t+1}`": "`${t+1}층`",
             "create(`\\fc3FLOOR \\fc9${l}\\f3\\n\\n${e[l]}`)": "create(`\\fc9${l}\\fc4층\\f3\\n\\n${e[l]}`)",
             '"B2B \\fc3X":`B2B \\fc3X\\f5': '"백투백 \\fc3X":`백투백 \\fc3X\\f5',
+            '"B2B \\fc3X":`B2B \\fc3X\\f5${t}`': '"백투백 \\fc3X":`백투백 \\fc3X\\f5${t}`',
             "${r} \\fc3PLAYING NOW": "${r} \\fc3명 플레이 중",
             "rasterizeSize:1024": "rasterizeSize:8192"
         }
