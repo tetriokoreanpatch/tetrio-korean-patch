@@ -265,6 +265,7 @@ const TRANSLATIONS = {
     "switching server…": "서버 이동 중…",
     "server switched": "서버 이동됨",
     "GAME IN PROGRESS, GOOD LUCK!": "게임 진행 중, 행운을 빌어요!",
+    "WAITING FOR PLAYERS": "플레이어를 기다리는 중",
     "PLAYERS (": "플레이어 (",
     "CHAT": "채팅",
     "Please remember to be civil to your opponent.": "상대방에게 예의를 지켜야 한다는 점을 잊지 마세요.",
@@ -1516,7 +1517,7 @@ function isBlacklisted(node) {
     if (node.matches(".social_relationship > h1 > span, #social_dm_username")) {
         return true;
     }
-    
+
     // 방이름
     if (node.matches("#room_listing_name, #room_content_name")) {
         return true;
