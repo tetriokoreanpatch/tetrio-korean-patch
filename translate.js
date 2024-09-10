@@ -645,7 +645,7 @@ const TRANSLATIONS = {
     "allow users who are in matchmaking to join": "매치메이킹에 있는 유저 참여 허용",
     "allow unranked users to play": "무랭크 유저 플레이 허용",
     "rank limit": "랭크 제한",
-    "limit by top rank": "상위 랭크로 제한",
+    "limit by top rank": "최고 랭크로 제한",
     "music": "음악",
     "gamemode": "게임 모드",
     // "versus": "대결",
