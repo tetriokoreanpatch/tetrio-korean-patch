@@ -1400,6 +1400,9 @@ const SELECTOR_TRANSLATIONS = [
     ["#footer_text", "#footer_text", /플레이 한 BLITZ/, "플레이 한 블리츠"],
     ["#footer_text", "#footer_text", /플레이 한 QUICK PLAY/, "플레이 한 빠른 플레이"],
     ["#footer_text", "#footer_text", /플레이 한 EXPERT QUICK PLAY/, "플레이 한 전문가용 빠른 플레이"],
+    ["#tetra_myrecords > .record_item > .record_owner", "#tetra_myrecords", /tetra league ((.*?)*)/, "테트라 리그 $1"],
+    ["#tetra_myrecords > .record_item > .record_result", "#tetra_myrecords", /ÿòìýøûĂ ((.*?)*)/, '<span style="font-size:30px"><b>승리</b></span> $1'],
+    ["#tetra_myrecords > .record_item > .record_result", "#tetra_myrecords", /íîïîêý ((.*?)*)/, '<span style="font-size:30px"><b>패배</b></span> $1'],
 ]
 
 // CSS 폰트 적용
