@@ -1516,7 +1516,11 @@ function isBlacklisted(node) {
     if (node.matches(".social_relationship > h1 > span, #social_dm_username")) {
         return true;
     }
-
+    
+    // 방이름
+    if (node.matches("#room_listing_name, #room_content_name")) {
+        return true;
+    }
     return false;
 }
 
