@@ -1446,6 +1446,15 @@ const fontFace = `
         display: inline;
         font-family: 'HUN', 'BMHANNAAirDMJ';
     }
+    .player_count.room_count::before {
+        font-family: 'HUN', 'BMHANNAAir' !important;
+        content: '방' !important;
+        margin-right: 0.2em !important;
+    }
+    .player_count.room_count::after {
+        font-family: 'HUN', 'BMHANNAAir' !important;
+        content: '개' !important;
+    }
   `;
 
 const style = document.createElement('style');
