@@ -101,6 +101,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             "`${n} hours`": "`${n}시간`",
             "`${n} days`": "`${n}일`",
             "`${n} months`": "`${n}개월`",
+            "`${n} years`": "`${n}년`",
 
             ".toLocaleString()": `.toLocaleString('ko-KR')`,
             '.toLocaleString("en-US")': `.toLocaleString('ko-KR')`,
