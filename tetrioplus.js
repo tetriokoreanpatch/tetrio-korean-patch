@@ -96,6 +96,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             'B2B \\fc3X': '백투백 \\fc3X',
             "${r} \\fc3PLAYING NOW": "${r} \\fc3명 플레이 중",
             "rasterizeSize:1024": "rasterizeSize:4096",
+            'create("CLUTCH")': 'create("클러치")',
             "`${n} seconds`": "`${n}초`",
             "`${n} minutes`": "`${n}분`",
             "`${n} hours`": "`${n}시간`",

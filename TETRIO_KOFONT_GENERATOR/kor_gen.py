@@ -61,8 +61,8 @@ def create_image_with_text(char, font_path, font_size):
     text_height = bottom - top
 
     # 이미지 크기 결정 (여유 공간을 위해 10픽셀 추가)
-    image_width = text_width + 2
-    image_height = text_height + 10 // 4 + 1
+    image_width = text_width
+    image_height = text_height + 10
 
     # 흰색 배경의 이미지 생성
     image = Image.new('RGBA', (image_width, image_height), (0, 0, 0, 0))
@@ -72,15 +72,15 @@ def create_image_with_text(char, font_path, font_size):
 
     # 텍스트 그리기 (중앙에 위치시키기)
     text_x = (image_width - text_width) // 2
-    text_y = (image_height - text_height) // 2 - 7 // 4
+    text_y = (image_height - text_height) // 2 - 7
     draw.text((text_x, text_y), char, font=font, fill=(255, 255, 255))
 
-    image = image.resize([image_width * 4, image_height * 4], Image.Resampling.BILINEAR)
-
+    image = image.resize([image_width // 2, image_height // 2], Image.Resampling.BILINEAR)
+    image = image.resize([image_width // 2 * 2, image_height // 2 * 2], Image.Resampling.BILINEAR)
     image.save('./hun1/__' + str(ord(char)) + ".png")
 
 usedchars = []
 for chr in trans:
     if ord(chr) >= 0xAC00 and ord(chr) <= 0xD7A3 and ord(chr) not in usedchars:
         usedchars.append(ord(chr))
-        create_image_with_text(chr, "./BMHANNAAir_ttf.ttf", 52 / 4)
+        create_image_with_text(chr, "./BMHANNAAir_ttf.ttf", 52)
