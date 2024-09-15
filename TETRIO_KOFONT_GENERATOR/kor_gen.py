@@ -61,7 +61,7 @@ def create_image_with_text(char, font_path, font_size):
     text_height = bottom - top
 
     # 이미지 크기 결정 (여유 공간을 위해 10픽셀 추가)
-    image_width = text_width
+    image_width = text_width + 10
     image_height = text_height + 10
 
     # 흰색 배경의 이미지 생성
@@ -73,7 +73,7 @@ def create_image_with_text(char, font_path, font_size):
     # 텍스트 그리기 (중앙에 위치시키기)
     text_x = (image_width - text_width) // 2
     text_y = (image_height - text_height) // 2 - 7
-    draw.text((text_x, text_y), char, font=font, fill=(255, 255, 255))
+    draw.text((text_x, text_y), char, font=font, fill=(255, 255, 255), stroke_fill=(255, 255, 255), stroke_width=1)
 
     image = image.resize([image_width // 2, image_height // 2], Image.Resampling.BILINEAR)
     image = image.resize([image_width // 2 * 2, image_height // 2 * 2], Image.Resampling.BILINEAR)
