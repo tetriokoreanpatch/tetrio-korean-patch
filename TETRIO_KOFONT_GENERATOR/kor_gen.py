@@ -32,15 +32,16 @@ trans = """
             '"HYPERSPEED!!!"': '"초고속 모드!!!"',
             "`floor ${t+1}`": "`${t+1}층`",
             "create(`\\fc3FLOOR \\fc9${l}\\f3\\n\\n${e[l]}`)": "create(`\\fc9${l}\\fc4층\\f3\\n\\n${e[l]}`)",
-            '"B2B \\fc3X":`B2B \\fc3X\\f5': '"백투백 \\fc3X":`백투백 \\fc3X\\f5',
-            '"B2B \\fc3X":`B2B \\fc3X\\f5${t}`': '"백투백 \\fc3X":`백투백 \\fc3X\\f5${t}`',
+            'B2B \\fc3X': '백투백 \\fc3X',
             "${r} \\fc3PLAYING NOW": "${r} \\fc3명 플레이 중",
             "rasterizeSize:1024": "rasterizeSize:4096",
+            'create("CLUTCH")': 'create("클러치")',
             "`${n} seconds`": "`${n}초`",
             "`${n} minutes`": "`${n}분`",
             "`${n} hours`": "`${n}시간`",
             "`${n} days`": "`${n}일`",
             "`${n} months`": "`${n}개월`",
+            "`${n} years`": "`${n}년`",
 
             ".toLocaleString()": `.toLocaleString('ko-KR')`,
             '.toLocaleString("en-US")': `.toLocaleString('ko-KR')`,
@@ -60,8 +61,8 @@ def create_image_with_text(char, font_path, font_size):
     text_height = bottom - top
 
     # 이미지 크기 결정 (여유 공간을 위해 10픽셀 추가)
-    image_width = text_width
-    image_height = text_height + 10
+    image_width = text_width + 2
+    image_height = text_height + 10 // 4 + 1
 
     # 흰색 배경의 이미지 생성
     image = Image.new('RGBA', (image_width, image_height), (0, 0, 0, 0))
@@ -71,8 +72,10 @@ def create_image_with_text(char, font_path, font_size):
 
     # 텍스트 그리기 (중앙에 위치시키기)
     text_x = (image_width - text_width) // 2
-    text_y = (image_height - text_height) // 2 - 7
-    draw.text((text_x, text_y), char, font=font, fill=(255, 255, 255), stroke_width=2, stroke_fill=(255, 255, 255, 128))
+    text_y = (image_height - text_height) // 2 - 7 // 4
+    draw.text((text_x, text_y), char, font=font, fill=(255, 255, 255))
+
+    image = image.resize([image_width * 4, image_height * 4], Image.Resampling.BILINEAR)
 
     image.save('./hun1/__' + str(ord(char)) + ".png")
 
@@ -80,4 +83,4 @@ usedchars = []
 for chr in trans:
     if ord(chr) >= 0xAC00 and ord(chr) <= 0xD7A3 and ord(chr) not in usedchars:
         usedchars.append(ord(chr))
-        create_image_with_text(chr, "./BMHANNAAir_ttf.ttf", 52)
+        create_image_with_text(chr, "./BMHANNAAir_ttf.ttf", 52 / 4)
