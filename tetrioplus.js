@@ -188,7 +188,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             var newe = []
             for (var asdf of e) {
 
-                trans = asdf;
+                var trans = asdf;
                 for (const [abab, cdcd] of PROMPT_TRANSLATIONS) {
                     trans = trans.replace(abab, cdcd);
                 }
