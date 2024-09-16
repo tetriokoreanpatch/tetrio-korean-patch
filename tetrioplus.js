@@ -185,7 +185,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             src = src.replace(a[0], a[1]);
         }
         src = src.replace(/zenith.ns.zenithprompts=class(.*?)update\(e\){/, "zenith.ns.zenithprompts=class$1update(e){" + str + `
-            newe = []
+            var newe = []
             for (var asdf of e) {
 
                 trans = asdf;
