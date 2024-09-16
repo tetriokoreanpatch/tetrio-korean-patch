@@ -86,9 +86,9 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             'create(t.stats.combo-1+" \\fc3COMBO")': 'create(t.stats.combo-1+" \\fc3콤보")',
             '${t.finesse.faults} fault${1===t.finesse.faults?"":"s"}': '실수 ${t.finesse.faults}개',
             '["","HALL OF BEGINNINGS","THE HOTEL","THE CASINO","THE ARENA","THE MUSEUM","ABANDONED OFFICES","THE LABORATORY","THE CORE","CORRUPTION","PLATFORM OF THE GODS"]':
-                '["","시작의 전당","호텔","카지노","투기장","박물관","버려진 사무실","실험실","코어","손상","신들의 플랫폼"]',
+                '["","시작의 전당","호텔","카지노","아레나","박물관","버려진 사무실","실험실","코어","손상","신들의 플랫폼"]',
             '["","hall of beginnings","the hotel","the casino","the arena","the museum","abandoned offices","the laboratory","the core","corruption","platform of the gods"]':
-                '["","시작의 전당","호텔","카지노","투기장","박물관","버려진 사무실","실험실","코어","손상","신들의 플랫폼"]',
+                '["","시작의 전당","호텔","카지노","아레나","박물관","버려진 사무실","실험실","코어","손상","신들의 플랫폼"]',
 
             '"HYPERSPEED!!!"': '"초고속 모드!!!"',
             "`floor ${t+1}`": "`${t+1}층`",
