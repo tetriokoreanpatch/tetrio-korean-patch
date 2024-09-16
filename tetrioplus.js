@@ -184,7 +184,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
         for (var a of SOURCE_TRANSLATIONS_REGEX) {
             src = src.replace(a[0], a[1]);
         }
-        src = src.replace(/zenith.ns.zenithprompts=class(.*?)update\(e\){/, "zenith.ns.zenithprompts=class$update(e){" + str + `
+        src = src.replace(/zenith.ns.zenithprompts=class(.*?)update\(e\){/, "zenith.ns.zenithprompts=class$1update(e){" + str + `
             newe = []
             for (var asdf of e) {
 
@@ -196,7 +196,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             }
             e = newe;
         `);
-        
+
         //src = src.replace("state:n.gsm.stats.zenith.speedrun?10===n.gsm.stats.zenith.floor?\"win\":\"on\":\"off\"", "state:\"on\"");
 
         //src = src.replaceAll("rl.get(\"hun\")", "rl.get(\"seg\")");
