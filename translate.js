@@ -928,7 +928,7 @@ const TRANSLATIONS = {
     "THIRD-PARTY TECHNOLOGIES (": "서드 파티 기술(",
     "SPECIAL THANKS": "특별한 감사",
     "THANK YOU FOR PLAYING.": "플레이해 주셔서 고마워요.",
-    "TETR.IO, THE TETR.IO LOGO, TETRA LEAGUE, OSK, AND THE OSK LOGO ARE TRADEMARKS OF OSK.": "TETR.IO, TETR.IO 로고, 테트라 리그, OSK, 그리고 OSK 로그는 OSK의 상표입니다.",
+    "TETR.IO, THE TETR.IO LOGO, TETRA LEAGUE, OSK, AND THE OSK LOGO ARE TRADEMARKS OF OSK.": "TETR.IO, TETR.IO 로고, 테트라 리그, OSK, 그리고 OSK 로고는 OSK의 상표입니다.",
     "ALL OTHER TRADEMARKS ARE THE PROPERTY OF THEIR RESPECTIVE OWNERS, TRADEMARK FAIR USE DOCTRINES APPLY.": "기타 모든 상표는 해당 소유자의 자산이며 상표 공정이용 원칙이 적용됩니다.",
     "VIEW ALL": "전체 보기",
     "GLOBAL MODERATOR": "글로벌 운영자",
