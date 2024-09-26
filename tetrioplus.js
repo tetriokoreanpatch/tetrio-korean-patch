@@ -97,7 +97,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
             "${r} \\fc3PLAYING NOW": "${r} \\fc3명 플레이 중",
             "rasterizeSize:1024": "rasterizeSize:4096",
             'create("CLUTCH")': 'create("클러치")',
-            "`${n} seconds`": "`${n}초`",
+            "`${Math.floor(t)} seconds`": "`${Math.floor(t)}초`",
             "`${n} minutes`": "`${n}분`",
             "`${n} hours`": "`${n}시간`",
             "`${n} days`": "`${n}일`",
