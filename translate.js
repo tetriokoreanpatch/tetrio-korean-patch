@@ -1555,7 +1555,7 @@ function translateNode(node) {
 
     if (node.nodeType === Node.TEXT_NODE) {
         // 텍스트 노드에서도 블랙리스트 검사
-        if (isBlacklisted(node.parentNode)) {
+        if (node.parentNode != null && isBlacklisted(node.parentNode)) {
             return;
         }
         let text = node.textContent;
