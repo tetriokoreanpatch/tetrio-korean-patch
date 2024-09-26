@@ -153,7 +153,7 @@ const TRANSLATIONS = {
     "You haven't blocked anyone yet.": "아직 차단한 사람이 없어요.",
     "NOTIFICATIONS": "알림",
     "You forfeited a ranked match": "랭크 경기에서 기권했어요",
-    "You have been awarded a loss for this match. Please ensure you have the time and internet connection to play! Repeated forfeits are punished (and will be automatically punished in the future). Thank you for understanding!": "이 경기에서 패배 처리됐어요. 플레이할 수 있는 시간이 있는지, 인터넷 연결이 가능한지 확인해 주세요! 반복적인 기권패는 처벌을 받게 되며, 향후에도 자동으로 처벌을 받게 돼요. 이해해 주셔서 고마워요!",
+    "You have been awarded a loss for this match. Please ensure you have the time and internet connection to play! Repeated forfeits are punished (and will be automatically punished in the future). Thank you for understanding!": "이 경기에서 패배 처리됐어요. 플레이할 수 있는 시간이 있는지, 인터넷 연결이 가능한지 확인해 주세요! 반복적인 기권은 처벌을 받게 되며, 향후에도 자동으로 처벌을 받게 돼요. 이해해 주셔서 고마워요!",
     "pick a game mode": "게임 모드를 고르세요",
     "fight players of your skill in ranked duels": "랭크 경기에서 실력이 비슷한 플레이어와 싸워 보세요",
     "QUICK PLAY": "빠른 플레이",
