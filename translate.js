@@ -1531,6 +1531,11 @@ function isBlacklisted(node) {
     if (node.matches("#room_listing_name, #room_content_name")) {
         return true;
     }
+    
+    // 리더보드 유저 이름
+    if (node.matches(".record_owner")) {
+        return true;
+    }
     return false;
 }
 
@@ -1548,6 +1553,10 @@ function translateNode(node) {
     }
 
     if (node.nodeType === Node.TEXT_NODE) {
+        // 텍스트 노드에서도 블랙리스트 검사
+        if (isBlacklisted(node)) {
+            return;
+        }
         let text = node.textContent;
         let trimmedText = text.trim();
         // 원본 텍스트를 확인하여 앞뒤 공백을 유지
