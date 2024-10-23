@@ -1337,7 +1337,7 @@ const TRANSLATIONS = {
 
     "career best ": "경력 최고 ",
 
-    "TETR.IO DESKTOP should open soon!": "TETR.IO 데스크톱이 곧 열릴 거예요!"
+    "TETR.IO DESKTOP should open soon!": "TETR.IO 데스크톱이 곧 열릴 거예요!",
     "you can close this tab once it has opened": "열린다면 이 탭을 닫아도 돼요",
 };
 
