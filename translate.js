@@ -1340,14 +1340,14 @@ const TRANSLATIONS = {
     "TETR.IO DESKTOP should open soon!": "TETR.IO 데스크톱이 곧 열릴 거예요!",
     "you can close this tab once it has opened": "열린다면 이 탭을 닫아도 돼요",
 
-    "FATIGUE SETS IN…": "피로가 쌓인다…",
+    "FATIGUE SETS IN…": "피로가 쌓입니다…",
     "+2 PERMANENT LINES": "+2 영구 줄",
-    "YOUR BODY GROWS WEAK…": "몸이 약해진다…",
+    "YOUR BODY GROWS WEAK…": "당신의 몸은 허약해집니다…",
     "receive 25% more garbage": "쓰레기 줄을 25% 더 받음",
-    "ALL SENSES BLUR TOGETHER…": "모든 감각이 흐려진다…",
+    "ALL SENSES BLUR TOGETHER…": "모든 감각이 함께 흐려집니다…",
     "+3 PERMANENT LINES": "+3 지울 수 없는 줄",
-    "YOUR CONSCIOUSNESS FADES…": "의식이 희미해진다…",
-    "THIS IS THE END.": "이게 끝이야.",
+    "YOUR CONSCIOUSNESS FADES…": "당신의 의식이 흐려집니다…",
+    "THIS IS THE END.": "끝이야.",
     "+5 PERMANENT LINES": "+5 지울 수 없는 줄"
 };
 
