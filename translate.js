@@ -493,7 +493,7 @@ const TRANSLATIONS = {
     "highest floor discovered while using 7/8 of the difficulty mods (\"Duo\" not allowed)": "7/8 난이도 모드를 사용하는 동안 발견한 가장 높은 층 (\"듀오\"는 허용되지 않음)",
     "Comes in 8 different flavors!": "8가지 맛으로 구성되어 있어요!",
     "BLOCK RATIONING": "블록 배급",
-    "highest total attack within the first 400 pieces placed while using the \"Expert Mode\" and \"Messier Garbage\" mods": "\"전문가 모드\" 및 \"더 지저분한 쓰레기\" 모드를 사용하는 동안 배치한 첫 400개 중 가장 높은 총 공격 횟수를 기록합니다.",
+    "highest total attack within the first 400 pieces placed while using the \"Expert Mode\" and \"Messier Garbage\" mods": "\"전문가 모드\" 및 \"더 지저분한 쓰레기\" 모드를 사용하는 동안 배치한 첫 400개 중 가장 높은 총 공격 횟수를 기록",
     "Adversity favors the resourceful.": "역경은 지혜로운 자에게 유리합니다.",
     "TALENTLESS": "무능",
     "highest floor discovered while using the \"All-Spin\" mod without performing any Spins": "스핀을 수행하지 않고 \"올-스핀\" 모드를 사용하는 동안 발견한 가장 높은 층",
