@@ -158,8 +158,9 @@ const TRANSLATIONS = {
     "fight players of your skill in ranked duels": "랭크 경기에서 실력이 비슷한 플레이어와 싸워 보세요",
     "QUICK PLAY": "빠른 플레이",
     "jump into a currently ongoing match": "현재 진행 중인 경기로 뛰어들어가 보세요",
-    " scale the tower! how far can you get?": " 탑을 올라가 보세요! 얼마나 멀리 갈 수 있나요?", // 다소 의역
+    "scale the tower! how far can you get?": "탑을 올라가 보세요! 얼마나 멀리 갈 수 있나요?", // 다소 의역
     "scale the tower!": "탑을 오르라!", // 다소 의역
+    "EVENT": "이벤트",
     "welcome to the ZENITH TOWER! send lines and KO enemies to scale the tower.": "제니스 타워에 오신 것을 환영해요! 줄을 보내고 적을 처치하여 탑을 오르세요.",
     "the further up the tower, the stronger the opponents!": "탑 위로 올라갈수록 상대는 더 강해져요!",
     "leaderboards reset every week, how far can you get?": "리더보드는 매주 초기화돼요, 얼마나 멀리 갈 수 있나요?",
@@ -190,6 +191,9 @@ const TRANSLATIONS = {
     "reach floor 8 to unlock": "8층에 도달하여 잠금해제",
     "DUO": "듀오",
     "scale the tower together with someone you hold close": "가까운 사람과 함께 탑을 오를 수 있어요",
+    "SNOWBALL BOARD": "눈덩이 보드",
+    "start with a 4x4 board, then roll it larger and larger": "4x4 보드로 시작한 다음 점점 더 크게 굴려요",
+    "SNOWBALL": "눈덩이",
     "READY": "준비",
     "READY!": "준비됨!",
     "WAITING": "기다리는 중",
