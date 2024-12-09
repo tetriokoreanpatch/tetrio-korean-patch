@@ -1357,14 +1357,19 @@ const TRANSLATIONS = {
     "you can close this tab once it has opened": "열린다면 이 탭을 닫아도 돼요",
 
     "FATIGUE SETS IN…": "피로가 쌓입니다…",
-    "+2 PERMANENT LINES": "+2 영구 줄",
+    "+2 PERMANENT LINES": "+2 영구적인 줄",
     "YOUR BODY GROWS WEAK…": "당신의 몸은 허약해집니다…",
     "receive 25% more garbage": "쓰레기 줄을 25% 더 받음",
     "ALL SENSES BLUR TOGETHER…": "모든 감각이 함께 흐려집니다…",
     "+3 PERMANENT LINES": "+3 지울 수 없는 줄",
     "YOUR CONSCIOUSNESS FADES…": "당신의 의식이 흐려집니다…",
     "THIS IS THE END.": "끝이야.",
-    "+5 PERMANENT LINES": "+5 지울 수 없는 줄"
+    "+5 PERMANENT LINES": "+5 영구적인 줄",
+
+    "i'm a grinch (disable most holiday cheer)": "저는 그린치예요(대부분의 연말 분위기 비활성화)",
+    "add salt to the board (prevent snow accumulating on it)": "보드에 소금 뿌리기(눈이 쌓이지 않도록 방지)",
+    "snow in the menus": "메뉴에 내리는 눈",
+    "snowstorm": "눈보라",
 };
 
 /**
