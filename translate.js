@@ -1369,7 +1369,7 @@ const TRANSLATIONS = {
     "i'm a grinch (disable most holiday cheer)": "저는 그린치예요(대부분의 연말 분위기 비활성화)",
     "add salt to the board (prevent snow accumulating on it)": "보드에 소금 뿌리기(눈이 쌓이지 않도록 방지)",
     "snow in the menus": "메뉴에 내리는 눈",
-    "snowstorm": "눈보라",
+    "SNOWSTORM": "눈보라",
 };
 
 /**
