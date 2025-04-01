@@ -92,7 +92,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
 
             '"HYPERSPEED!!!"': '"초고속 모드!!!"',
             "`floor ${t+1}`": "`${t+1}층`",
-            "create(`\\fc3FLOOR \\fc9${a}\\f3\\n\\n${e[a]}`)": "create(`\\fc9${a}\\fc4층\\f3\\n\\n${e[a]}`)",
+            "create(`\\fc3FLOOR \\fc9${r}\\f3\\n\\n${e[r]}`)": "create(`\\fc9${r}\\fc4층\\f3\\n\\n${e[r]}`)",
             'B2B \\fc3X': '백투백 \\fc3X',
             "${r} \\fc3PLAYING NOW": "${r} \\fc3명 플레이 중",
             "rasterizeSize:1024": "rasterizeSize:4096",
