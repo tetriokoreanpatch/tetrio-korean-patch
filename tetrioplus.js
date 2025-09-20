@@ -82,7 +82,7 @@ createRewriteFilter("Koreanify", "https://tetr.io/js/tetrio.js*", {
                 '{timer:"시간",stopwatch:"시간",level:"레벨",lines:"줄",allclears:"올 클리어",hold:"홀드",pieces:"블록",pieces_duo:"블록",finesse_l:"피네스",finesse:"피네스",keys:"입력",score:"점수",spp:"점수",garbage:"쓰레기 줄",attack:"공격",attack_duo:"공격",vs:"VS 점수",kills:"KO 수",kills_duo:"KO 수",placement:"순위"};',
             'create("ready")': 'create("레디")',
             'create("set")': 'create("셋")',
-            'create("GO!")': 'create(e.stride?"고!":"시작!")',
+            'create(window.TWC_ANY_ENABLED?"FIGHT!":"GO!")': 'create(window.TWC_ANY_ENABLED?"FIGHT!":(e.stride?"고!":"시작!"))',
             'create(t.stats.combo-1+" \\fc3COMBO")': 'create(t.stats.combo-1+" \\fc3콤보")',
             '${t.finesse.faults} fault${1===t.finesse.faults?"":"s"}': '실수 ${t.finesse.faults}개',
             '["","HALL OF BEGINNINGS","THE HOTEL","THE CASINO","THE ARENA","THE MUSEUM","ABANDONED OFFICES","THE LABORATORY","THE CORE","CORRUPTION","PLATFORM OF THE GODS"]':
